@@ -40,7 +40,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#"><h2>Sixteen <em>Clothing</em></h2></a>
+          <a class="navbar-brand" href="#"><h2>SIPA<em>LBAB</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -232,7 +232,7 @@
             <div class="inner-content">
               <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            - Design: <a rel="nofollow noopener" href="#" target="_blank">TemplateMo</a></p>
             </div>
           </div>
         </div>
