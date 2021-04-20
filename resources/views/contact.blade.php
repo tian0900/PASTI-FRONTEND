@@ -1,3 +1,5 @@
+<!--SOPANAGAMAN-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Sixteen Clothing - Contact Page</title>
+    <title>SIPALBAB</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +55,7 @@
                 <a class="nav-link" href="products.blade.php">Our Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.blade.php">About Us</a>
+                <a class="nav-link" href="about.hblade.php">About Us</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="contact.blade.php">Contact Us</a>
