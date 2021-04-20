@@ -340,7 +340,7 @@
             <div class="inner-content">
               <p>Copyright &copy; Sopanagaman
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            - Design: <a rel="nofollow noopener" href="" target="_blank"></a></p>
             </div>
           </div>
         </div>
