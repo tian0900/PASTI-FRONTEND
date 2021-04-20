@@ -33,25 +33,25 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>SIPA<em>LBAB</em></h2></a>
+          <a class="navbar-brand" href="#"><h2>SIPA<em>LBAB</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="#">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
+                <a class="nav-link" href="#">Our Products</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -172,7 +172,7 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Samuel Tampubolan</h4>
+                <h4>Samuel Tampubolon</h4>
                 <span>Developer</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
               </div>
@@ -194,7 +194,7 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Nesty Tampubolan</h4>
+                <h4>Nesty Tampubolon</h4>
                 <span>Developer</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
               </div>
@@ -216,7 +216,7 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Onra Sihombingr</h4>
+                <h4>Onra Sihombing</h4>
                 <span>Developer</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
               </div>
