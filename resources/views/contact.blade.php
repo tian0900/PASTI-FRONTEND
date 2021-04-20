@@ -53,7 +53,7 @@
                 <a class="nav-link" href="products.blade.php">Our Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.hblade.php">About Us</a>
+                <a class="nav-link" href="about.blade.php">About Us</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="contact.blade.php">Contact Us</a>
