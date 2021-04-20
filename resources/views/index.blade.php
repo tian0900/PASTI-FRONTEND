@@ -271,7 +271,7 @@
             <div class="inner-content">
               <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
             
-            - Design: <a rel="nofollow noopener" href="#" target="_blank">TemplateMo</a></p>
+            - Design: <a rel="nofollow noopener" href="#" target="_blank"></a></p>
             </div>
           </div>
         </div>
