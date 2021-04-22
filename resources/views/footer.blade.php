@@ -4,9 +4,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="#" target="_blank"></a></p>
+              <p>Copyright &copy; 2021 Sopanagaman Official
+                    <a rel="nofollow noopener" href="#" target="_blank"></a></p>
             </div>
           </div>
         </div>
