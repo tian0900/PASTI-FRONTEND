@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DaftarprodukController ;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/daftarproduk', function () {
-    return view('admin.daftarproduk');
-});
+Route::get('/daftarproduk', [DaftarprodukController::class, 'index']);
+Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
+
+

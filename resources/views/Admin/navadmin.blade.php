@@ -8,16 +8,16 @@
     <title>Toba Tio</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('css')}}/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css')}}/style.css">
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
         crossorigin="anonymous" />
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('bootstrap')}}/js/bootstrap.min.js"></script>
     <!-- Favicon and touch icons -->
 </head>
 
@@ -69,3 +69,19 @@
             <a class="btn btn-primary btn-customized open-menu" href="#" role="button">
                 <i class="fas fa-align-left"></i> <span>Menu</span>
             </a>
+
+                    <!-- Top content -->
+                    <div class="top-content section-container" id="top-content">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                            <h1 class="wow fadeIn"> Apotek <strong>SIPALBAB</strong> </h1>
+                            <div class="description wow fadeInLeft">
+                                <h2>
+                                    Daftar Produk
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

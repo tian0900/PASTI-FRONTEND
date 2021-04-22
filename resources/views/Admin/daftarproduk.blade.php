@@ -1,20 +1,6 @@
 @include('admin.navadmin')
 
-            <!-- Top content -->
-            <div class="top-content section-container" id="top-content">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                            <h1 class="wow fadeIn"> Apotek <strong>SIPALBAB</strong> </h1>
-                            <div class="description wow fadeInLeft">
-                                <h2>
-                                    Daftar Produk
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- Section 1 -->
             <div class="tabel1" id="section-2">
                 <div class="container-fluid">
@@ -61,7 +47,7 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Tambah Produk</button>
+            <button type="button" class="btn btn-info" onclick="window.location.href='daftarproduk/tambah'"><i class="fas fa-plus"></i> Tambah Produk</button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
