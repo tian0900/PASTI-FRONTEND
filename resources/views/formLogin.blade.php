@@ -393,7 +393,7 @@ margin-left: 30px;
        <img src="https://www.gtagangwars.de/suite/images/styleLogo-6bd77433ddf78bd8477ea7306e804f677bc925d0.png" alt="" />
        </div>
  <div class="cont_form_login">
-<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons"></i></a>
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">x</i></a>
    <h2>LOGIN</h2>
  <input type="text" placeholder="Username" />
 <input type="password" placeholder="Password" />
@@ -401,7 +401,7 @@ margin-left: 30px;
   </div>
 
    <div class="cont_form_sign_up">
-<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons"></i></a>
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">x</i></a>
      <h2>SIGN UP</h2>
 <input type="text" placeholder="Username" />
 <input type="password" placeholder="Password" />
