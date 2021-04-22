@@ -29,3 +29,7 @@ Route::get('/login', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/daftarproduk', function () {
+    return view('admin.daftarproduk');
+});
