@@ -3,7 +3,7 @@
 
 <div class="edit">
     <div class="card">
-    <h1>Tambah Menu</h1>
+    <h1>Tambah Produk</h1>
         <div class="card-body">
 
 
