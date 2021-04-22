@@ -38,19 +38,19 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="/index"><h2>SIPALBAB</h2></a>
+          <a class="navbar-brand" href="/"><h2>SIPALBAB</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/index">Home
+                <a class="nav-link" href="/">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="/products">Our Products</a>
+                <a class="nav-link" href="/menu">Our Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about">About Us</a>
@@ -59,7 +59,10 @@
                 <a class="nav-link" href="/contact">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/loginCustomer">Login Customer</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="/loginAdmin">Login Admin</a>
               </li>
             </ul>
           </div>
@@ -282,7 +285,6 @@
     </footer>
 
 
-<<<<<<< HEAD
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -294,7 +296,6 @@
     <script src="js/slick.js"></script>
     <script src="js/isotope.js"></script>
     <script src="js/accordions.js"></script>
-=======
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
@@ -302,8 +303,6 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
->>>>>>> d6171df514db19bfc227d577b71e2c6c995eda4c
-
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

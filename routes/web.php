@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\DaftarprodukController ;
+=======
+use App\Http\Controllers\SipalbabController;
+
+>>>>>>> 01557289b9866550abdf048bf3bda83ff2c4a4d3
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +18,7 @@ use App\Http\Controllers\DaftarprodukController ;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [SipalbabController::class, 'index']);
 
 Route::get('/menu', function () {
     return view('menu');
@@ -23,8 +26,11 @@ Route::get('/menu', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/login', function () {
-    return view('formLogin');
+Route::get('/loginCustomer', function () {
+    return view('formLoginCustomer');
+});
+Route::get('/loginAdmin', function () {
+    return view('formLoginAdmin');
 });
 Route::get('/about', function () {
     return view('about');
