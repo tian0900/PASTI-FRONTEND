@@ -19,6 +19,7 @@
         crossorigin="anonymous" />
     <script src="{{asset('bootstrap')}}/js/bootstrap.min.js"></script>
     <!-- Favicon and touch icons -->
+    <link href="{{asset('image')}}/drugstore.png" rel="icon">
 </head>
 
 <body>
