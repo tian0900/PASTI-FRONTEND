@@ -59,7 +59,10 @@
                 <a class="nav-link" href="/contact">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/loginCustomer">Login Customer</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="/loginAdmin">Login Admin</a>
               </li>
             </ul>
           </div>
