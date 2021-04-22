@@ -26,3 +26,6 @@ Route::get('/contact', function () {
 Route::get('/login', function () {
     return view('formLogin');
 });
+Route::get('/about', function () {
+    return view('about');
+});
