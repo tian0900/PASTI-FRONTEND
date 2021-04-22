@@ -282,7 +282,6 @@
     </footer>
 
 
-<<<<<<< HEAD
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -294,7 +293,6 @@
     <script src="js/slick.js"></script>
     <script src="js/isotope.js"></script>
     <script src="js/accordions.js"></script>
-=======
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
@@ -302,8 +300,6 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
->>>>>>> d6171df514db19bfc227d577b71e2c6c995eda4c
-
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
