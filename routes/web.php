@@ -22,8 +22,11 @@ Route::get('/menu', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/login', function () {
-    return view('formLogin');
+Route::get('/loginCustomer', function () {
+    return view('formLoginCustomer');
+});
+Route::get('/loginAdmin', function () {
+    return view('formLoginAdmin');
 });
 Route::get('/about', function () {
     return view('about');
