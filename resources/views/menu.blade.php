@@ -71,9 +71,9 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Menus				
+								Our Products				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="menu.html"> Menus</a></p>
+							<p class="text-white link-nav"><a href="/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/menu"> Menus</a></p>
 						</div>	
 					</div>
 				</div>
