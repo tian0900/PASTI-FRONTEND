@@ -26,7 +26,7 @@
           <div class="col-md-8">
 
             <div id="map">
-              <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.2539555666158!2d99.06501050136467!3d2.3341671025124793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04670309d115%3A0xd035ba0030362db!2sToko%20Obat%20Las%20Roha!5e0!3m2!1sid!2sid!4v1619337157433!5m2!1sid!2sid" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-md-4">
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    
+
     <div class="send-message">
       <div class="container">
         <div class="row">
@@ -132,23 +132,23 @@
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="1">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="2">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="3">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="4">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="5">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="6">
               </div>
