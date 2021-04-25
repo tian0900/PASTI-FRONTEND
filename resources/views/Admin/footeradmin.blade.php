@@ -19,7 +19,7 @@
 
     <!-- Javascript -->
 
-
+            
     <script src="{{asset('js')}}/jquery-1.10.2.min.js"></script>
     <script src="{{asset('js')}}/jquery-3.3.1.min.js"></script>
     <script src="{{asset('js')}}/jquery-migrate-3.0.0.min.js"></script>

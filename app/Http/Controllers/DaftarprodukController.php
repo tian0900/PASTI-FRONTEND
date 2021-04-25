@@ -13,4 +13,9 @@ class DaftarprodukController extends Controller
     public function tambah(){
         return view('admin.tambahproduk');
     }
+
+    public function edit($id_produk){
+        $editproduks = Produk::find($id_produk);
+        return view('admin.editmenu',compact('editproduks'));
+    }
 }

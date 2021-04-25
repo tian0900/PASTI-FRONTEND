@@ -8,7 +8,7 @@
     <title>SIPALBAB</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{asset('css')}}/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('bootstrap')}}/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -79,7 +79,7 @@
                             <h1 class="wow fadeIn"> Apotek <strong>SIPALBAB</strong> </h1>
                             <div class="description wow fadeInLeft">
                                 <h2>
-                                    Daftar Produk
+                                    
                                 </h2>
                             </div>
                         </div>
