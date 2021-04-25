@@ -23,13 +23,15 @@
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="gambar" alt="">
+              <img src="{{asset('image')}}/sopanagaman.jpeg" alt="">
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>lorem</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+              <h4><em>SOPANAGAMAN</em></h4>
+              <p> Hello Fellas, meet again with our SOPANAGAMAN team. This time we are building an e-commerce website for online services at LAS ROHA Pharmacy.
+                <br><br>This website development uses the PHP programming language with the help of the Laravel framework.
+                This task is aimed at fulfilling the PSW II project</p>
               <ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -66,10 +68,12 @@
                   </div>
                 </div>
               </div>
+              <img width="100px" height="200px" src="{{asset('image')}}/team_01.jpg">
               <div class="down-content">
                 <h4>Christian Sihotang</h4>
                 <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
@@ -88,13 +92,16 @@
                   </div>
                 </div>
               </div>
+              <img width="100px" height="200px" src="{{asset('image')}}/team_02.jpeg">
               <div class="down-content">
                 <h4>Marcellino Lumban Gaol</h4>
                 <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
+          
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
@@ -110,10 +117,12 @@
                   </div>
                 </div>
               </div>
+              <img width="100px" height="200px" src="{{asset('image')}}/team_03.png">
               <div class="down-content">
                 <h4>Samuel Tampubolon</h4>
                 <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
@@ -132,10 +141,12 @@
                   </div>
                 </div>
               </div>
+              <img width="80px" height="200px" src="{{asset('image')}}/team_04.jpeg">
               <div class="down-content">
                 <h4>Nesty Tampubolon</h4>
                 <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
@@ -154,10 +165,12 @@
                   </div>
                 </div>
               </div>
+              <img width="100px" height="200px" src="{{asset('image')}}/team_05.jpeg">
               <div class="down-content">
                 <h4>Onra Sihombing</h4>
                 <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
@@ -179,7 +192,8 @@
               <div class="down-content">
                 <h4>Unknow</h4>
                 <span>developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 1 </p>
               </div>
             </div>
           </div>
