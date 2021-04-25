@@ -438,7 +438,7 @@ header .navbar {
 }
 
 .product-item .down-content h6 {
-	position: absolute;
+
 	top: 30px;
 	right: 30px;
 	font-size: 18px;
@@ -467,6 +467,12 @@ header .navbar {
 	font-weight: 500;
 }
 
+.card-produk{
+	transition: all ease-in-out 0.3s;
+}
+.card-produk:hover{
+	transform: scale(1.088);
+}
 
 
 
@@ -1060,7 +1066,8 @@ footer .inner-content p a {
 }
 
 .items{
-	background-color: #c2c2d6;
+	background-color:  #2F80ED;
+	;
 	padding:100px;
 }
 
@@ -1140,4 +1147,7 @@ h4 {
 
 .slick-slide {
 	margin: 10px
+}
+button{
+	margin:10px;
 }

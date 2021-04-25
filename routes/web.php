@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DaftarprodukController ;
 use App\Http\Controllers\SipalbabController;
 use App\Http\Controllers\VerifikasiController;
-
+use App\Http\Controllers\ProdukController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,10 +17,8 @@ use App\Http\Controllers\VerifikasiController;
 */
 
 Route::get('/', [SipalbabController::class, 'index']);
+Route::get('/produk', [ProdukController::class, 'index']);
 
-Route::get('/menu', function () {
-    return view('menu');
-});
 Route::get('/contact', function () {
     return view('contact');
 });

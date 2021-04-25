@@ -9,6 +9,7 @@ class SipalbabController extends Controller
 {
     public function index(){
         $feedback = Feedback::all();
-        return view('index',compact('feedback'));
+        $produk = Produk::inRandomOrder()->limit(6)->get();
+        return view('index',compact('feedback','produk'));
     }
 }
