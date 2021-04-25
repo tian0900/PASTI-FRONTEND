@@ -34,7 +34,7 @@
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -61,7 +61,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://www.instagram.com/christianx911/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -83,7 +83,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://www.instagram.com/marcellinoknl/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -105,7 +105,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://www.instagram.com/samueltmp_/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -127,7 +127,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://www.instagram.com/nestygloria03/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -149,7 +149,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="https://www.instagram.com/onra_imanuel/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -171,7 +171,7 @@
                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
