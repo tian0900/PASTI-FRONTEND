@@ -89,7 +89,7 @@
                 </div>
               </div>
               <div class="down-content">
-                <h4>Marcellino Lumban Gaolr</h4>
+                <h4>Marcellino Lumban Gaol</h4>
                 <span>Developer</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
               </div>

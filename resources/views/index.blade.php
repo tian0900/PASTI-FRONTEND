@@ -31,19 +31,21 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>About SIPALBAB</h2>
+              <h2 style="font-size:45px">About SIPALBAB</h2>
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <h2 >Looking for the best products?</h2>
+			  <p><strong>Lasroha Pharmacy</strong> provides all the necessities you need. From the need to calm a saturated mind, baby supplies, supplements and vitamins, and medicines</p>
+			  <h3><strong>Why you must choose us?</strong></h3> 
+			  <br>
               <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Have a health license </p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Products are guaranteed to be in the newest and best quality </p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Friendly service</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Has cooperated with local hospitals</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;The location is in the middle of the city so that it is easy to reach</p><br>
               </ul>
               <a href="/about" class="filled-button">Read More</a>
             </div>

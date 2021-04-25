@@ -1,307 +1,211 @@
-<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Marco</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">				
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>	
-		 <!-- Header -->
-         <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#"><h2>SIPA<em>LBAB</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="/menu">Our Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About Us</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
-              </li>
-            </ul>
+@include('navbar')
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Best Offer</h4>
+            <h2>New Arrivals On Sale</h2>
           </div>
         </div>
-      </nav>
-    </header>
-			
-			<!-- start banner Area -->
-			<section class="about-banner relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Our Products				
-							</h1>	
-							<p class="text-white link-nav"><a href="/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/menu"> Menus</a></p>
-						</div>	
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->			
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Flash Deals</h4>
+            <h2>Get your best products</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Last Minute</h4>
+            <h2>Grab last minute deals</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
 
-			<!-- Start menu-area Area -->
-            <section class="menu-area section-gap" id="menu">
-                <div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">What kind of Foods we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>	
+<!-- About -->
+<div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 style="font-size:45px">About SIPALBAB</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h2 >Looking for the best products?</h2>
+			  <p><strong>Lasroha Pharmacy</strong> provides all the necessities you need. From the need to calm a saturated mind, baby supplies, supplements and vitamins, and medicines</p>
+			  <h3><strong>Why you must choose us?</strong></h3> 
+			  <br>
+              <ul class="featured-list">
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Have a health license </p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Products are guaranteed to be in the newest and best quality </p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Friendly service</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Has cooperated with local hospitals</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;The location is in the middle of the city so that it is easy to reach</p><br>
+              </ul>
+              <a href="/about" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="assets/images/feature-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- About Here -->
 
-                    <ul class="filter-wrap filters col-lg-12 no-padding">
-                        <li class="active" data-filter="*">All Menu</li>
-                        <li data-filter=".breakfast">Breakfast</li>
-                        <li data-filter=".lunch">Lunch</li>
-                        <li data-filter=".dinner">Dinner</li>
-                        <li data-filter=".budget-meal">Budget Meal</li>
-                        <li data-filter=".buffet">Buffet</li>
-                    </ul>
-                    
-                    <div class="filters-content">
-                        <div class="row grid">
-                            <div class="col-md-6 all breakfast">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Cappuccion</h4>
-										<h4 class="price">$49</h4>
-									</div>			
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>					                               
-                            </div>                           
-                            <div class="col-md-6 all dinner">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Americano</h4>
-										<h4 class="price">$49</h4>
-									</div>			
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>
-                            </div>
-                            <div class="col-md-6 all budget-meal">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Macchiato</h4>
-										<h4 class="price">$49</h4>
-									</div>			
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>
-                            </div>
-                            <div class="col-md-6 all breakfast">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Mocha</h4>
-										<h4 class="price">$49</h4>
-									</div>
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>
-                            </div>
-                            <div class="col-md-6 all lunch">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Piccolo Latte</h4>
-										<h4 class="price">$49</h4>
-									</div>
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>
-                            </div>
-                            <div class="col-md-6 all buffet">
-								<div class="single-menu">
-									<div class="title-wrap d-flex justify-content-between">
-										<h4>Ristretto</h4>
-										<h4 class="price">$49</h4>
-									</div>
-									<p>
-										Usage of the Internet is becoming more common due to rapid advance.
-									</p>									
-								</div>
-                            </div>                            
-                        </div>
-                    </div>
-                    
+
+
+
+
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Latest Products</h2>
+              <a href="/products">view all products <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$25.75</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (24)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_02.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$30.25</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (21)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_03.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$20.45</h6>
+                <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (36)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_04.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$15.25</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (48)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_05.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$12.50</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (16)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/product_06.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Tittle goes here</h4></a>
+                <h6>$22.50</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (32)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Creative &amp; SIPA<em>LBAB</em> Products</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                 </div>
-            </section>
-            <!-- End menu-area Area -->						
+                <div class="col-md-4">
+                  <a href="#" class="filled-button">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<!-- Start reservation Area -->
-			<section class="reservation-area section-gap relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row justify-content-between align-items-center">
-						<div class="col-lg-6 reservation-left">
-							<h1 class="text-white">Reserve Your Seats
-							to Confirm if You Come
-							with Your Family</h1>
-							<p class="text-white pt-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-							</p>
-						</div>
-						<div class="col-lg-5 reservation-right">
-							<form class="form-wrap text-center" action="#">
-								<input type="text" class="form-control" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" >
-								<input type="email" class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
-								<input type="text" class="form-control" name="phone" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" >		
-								<input type="text" class="form-control date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" >									
-								<div class="form-select" id="service-select">
-									<select>
-										<option data-display="">Select Event</option>
-										<option value="1">Event One</option>
-										<option value="2">Event Two</option>
-										<option value="3">Event Three</option>
-										<option value="4">Event Four</option>
-									</select>
-								</div>									
-								<button class="primary-btn text-uppercase mt-20">Make Reservation</button>
-							</form>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End reservation Area -->				
-
-			<!-- start footer Area -->		
-			<footer class="footer-area">
-				<div class="footer-widget-wrap">
-					<div class="container">
-						<div class="row section-gap">
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Opening Hours</h4>
-									<ul class="hr-list">
-										<li class="d-flex justify-content-between">
-											<span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Saturday</span> <span>08.00 am - 10.00 pm</span>
-										</li>
-										<li class="d-flex justify-content-between">
-											<span>Sunday</span> <span>08.00 am - 10.00 pm</span>
-										</li>																				
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Contact Us</h4>
-									<p>
-										56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
-									</p>
-									<p class="number">
-										012-6532-568-9746 <br>
-										012-6532-569-9748
-									</p>
-								</div>
-							</div>						
-							<div class="col-lg-4  col-md-6 col-sm-6">
-								<div class="single-footer-widget">
-									<h4>Newsletter</h4>
-									<p>You can trust us. we only send promo offers, not a single spam.</p>
-									<div class="d-flex flex-row" id="mc_embed_signup">
-
-
-										  <form class="navbar-form" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-										    <div class="input-group add-on align-items-center d-flex">
-										      	<input class="form-control" name="EMAIL" placeholder="Your Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email address'" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-										      <div class="input-group-btn">
-										        <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
-										      </div>
-										    </div>
-										      <div class="info mt-20"></div>
-										  </form>
-									</div>
-								</div>
-							</div>						
-						</div>					
-					</div>					
-				</div>
-				<div class="footer-bottom-wrap">
-					<div class="container">
-						<div class="row footer-bottom d-flex justify-content-between align-items-center">
-							<p class="col-lg-8 col-mdcol-sm-6 -6 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-							<ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
-	                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-	                            <li><a href="#"><i class="fa fa-behance"></i></a></li>           
-	                        </ul>
-						</div>						
-					</div>
-				</div>
-			</footer>
-			<!-- End footer Area -->	
-
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
- 			<script src="js/jquery-ui.js"></script>					
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>					
-			<script src="js/owl.carousel.min.js"></script>			
-            <script src="js/isotope.pkgd.min.js"></script>								
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+@include('footer')
