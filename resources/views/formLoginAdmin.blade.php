@@ -28,6 +28,7 @@
         background-color:rgb(0, 0, 0);
     }
     </style>
+    <a href="/"><button type="button" class="btn btn-warning">< Back</button></a>
 <div class="container">
 	<div class="row">
 		 <h1><i class="fa fa-users-cog" aria-hidden="true"></i> Login Admin</h1>
