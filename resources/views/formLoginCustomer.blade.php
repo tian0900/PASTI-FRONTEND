@@ -354,11 +354,14 @@ font-weight: 400;
     position: relative;
     float: left;
     margin: 10px;
-margin-left: 30px;
 }
+
+
 </style>
+
 <div class="cotn_principal">
 <div class="cont_centrar">
+<a href="/"><button type="button" class="btn btn-warning">< Back</button></a>
 
   <div class="cont_login">
 <div class="cont_info_log_sign_up">

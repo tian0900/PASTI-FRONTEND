@@ -90,11 +90,11 @@
             <div class="inner-content">
               <div class="row">
                 <div class="col-md-8">
-                  <h4>Creative &amp; SIPA<em>LBAB</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                  <h4><em>SOPANAGAMAN</em> &amp; <em>SIPALBAB</em> Products</h4>
+                  <p>This Website was created for Apotek LASROHA</p>
                 </div>
                 <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
+                  <a href="/loginCustomer" class="filled-button">Purchase Now</a>
                 </div>
               </div>
             </div>

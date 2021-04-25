@@ -205,7 +205,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                 </div>
                 <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
+                  <a href="/loginCustomer" class="filled-button">Purchase Now</a>
                 </div>
               </div>
             </div>
