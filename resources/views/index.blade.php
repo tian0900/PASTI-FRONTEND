@@ -175,9 +175,9 @@
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
             <div class="product-item">
-              <a href="#"><img src="imgproduk/{{$produks->Gambar_Produk}}" alt=""></a>
+             <img src="imgproduk/{{$produks->Gambar_Produk}}" alt=""width="80px" height="250px" >
               <div class="down-content">
-                <a href="#"><h4>{{$produks->Nama_Produk}}</h4></a>
+                <h4>{{$produks->Nama_Produk}}</h4>
                 <p>{{$produks->Produk_Deskripsi}}</p>
                 <h6>@currency($produks->Harga_Produk)</h6>
                 <button type="button" class="btn btn-primary col-md-4">Beli</button>
