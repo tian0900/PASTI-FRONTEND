@@ -60,9 +60,9 @@
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.facebook.com/hacker.cracker009 "><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/christian-sihotang-339754193/"><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="https://www.instagram.com/christianx911/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
@@ -84,9 +84,9 @@
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.facebook.com/marcellinokelly.lumbangaol"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="https://www.linkedin.com/in/marcellino-lumban-gaol-2768901b9/"></i></a></li>
                       <li><a href="https://www.instagram.com/marcellinoknl/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
@@ -109,9 +109,9 @@
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.facebook.com/prayoga.tampubolon.9"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/samuel-tampubolon-a1425a1bb/"><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="https://www.instagram.com/samueltmp_/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
@@ -133,9 +133,9 @@
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.facebook.com/nesty.ri"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://web.whatsapp.com/send?phone=6282276636822&text&app_absent=0"><i class="fa fa-whatsapp"></i></a></li>
                       <li><a href="https://www.instagram.com/nestygloria03/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
@@ -155,11 +155,11 @@
               <div class="thumb-container">
                 <img src="gambar" alt="">
                 <div class="hover-effect">
-                  <div class="hover-content">
+                  <div class="hover-content">s
                     <ul class="social-icons">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://www.facebook.com/onra.imanuel"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/onra-sihombing-037545208/"><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="https://www.instagram.com/onra_imanuel/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
