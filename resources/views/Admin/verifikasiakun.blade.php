@@ -17,30 +17,27 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
-                                            <th>Jenis</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
+                                            <th></th>
                                             <th>Gambar</th>
+                                            <th>Kategori</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($produks as $produk)
                                         <tr>
-                                            <td>{{$produk->ProdukID}}</td>
-                                            <td>{{$produk->Nama_Produk}}</td>
-                                            <td>{{$produk->Jenis_Produk}}</td>
-                                            <td>{{$produk->Produk_Deskripsi}}</td>
-                                            <td>@currency($produk->Harga_Produk)</td>
-                                            <td><img src="{{url('imgproduk/'.$produk->Gambar_Produk)}}" width="80px" height="80px" alt=""></td>
-                                            <td><button type="button" class="btn btn-primary" onclick="window.location.href='/daftarproduk/edit/{{$produk->ProdukID}}'"><i
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><img src="" width="80px" height="80px" alt="">
+                                            </td>
+                                            <td></td>
+                                            <td><button type="button" class="btn btn-primary"><i
                                                         class="fas fa-edit"></i>
                                                     Edit</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" ><i class="fas fa-trash-alt"></i>
                                                     Hapus</button>
                                             </td>
                                         </tr>
-                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -67,7 +64,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-danger" onclick="window.location.href='/daftarproduk/delete/{{$produk->ProdukID}}'">Hapus</button>
+          <button type="button" class="btn btn-danger">Hapus</button>
         </div>
       </div>
       
