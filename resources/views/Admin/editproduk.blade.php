@@ -21,9 +21,9 @@
                     <div class="col-sm-9">
                         <select class="form-control"  required="required" name="Jenis_Produk" aria-label="Default select example" >
                             <option value="{{$editproduks->Jenis_Produk}}">{{$editproduks->Jenis_Produk}}</option>
-                            <option value="Asma">Asma</option>
-                            <option value="Batuk">Batuk</option>
-                            <option value="Demam">Demam</option>
+                            <option value="Sirup">Sirup</option>
+                            <option value="Popok Bayi">Popok Bayi</option>
+                            <option value="Tablet">Tablet</option>
                            
             
                         </select>

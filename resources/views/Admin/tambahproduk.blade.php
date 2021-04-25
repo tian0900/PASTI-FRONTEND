@@ -19,9 +19,9 @@
                     <label class="col-sm-3 col-form-label">Jenis</label>
                     <div class="col-sm-9">
                         <select class="form-control"  required="required" name="Jenis_Produk" aria-label="Default select example" >
-                            <option value="Asma">Asma</option>
-                            <option value="Batuk">Batuk</option>
-                            <option value="Demam">Demam</option>
+                            <option value="Sirup">Sirup</option>
+                            <option value="Popok Bayi">Popok Bayi</option>
+                            <option value="Tablet">Tablet</option>
                         </select>
                     </div>
                 </div>
