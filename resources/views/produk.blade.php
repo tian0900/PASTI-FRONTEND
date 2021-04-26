@@ -67,11 +67,11 @@
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
             <div class="product-item">
-              <a href="#"><img src="imgproduk/{{$produks->Gambar_Produk}}" alt=""></a>
+              <a href="#"><img src="imgproduk/{{$produks->gambar_produk}}" alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>{{$produks->Nama_Produk}}</h4></a>
-                <p>{{$produks->Produk_Deskripsi}}</p>
-                <h6>@currency($produks->Harga_Produk)</h6>
+                <a href="#"><h4>{{$produks->nama_produk}}</h4></a>
+                <p>{{$produks->deskripsi_produk}}</p>
+                <h6>@currency($produks->harga_produk)</h6>
               </div>
             </div>
           </div>

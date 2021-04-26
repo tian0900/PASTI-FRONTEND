@@ -7,7 +7,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table mr-1"></i>
-                            Daftar Produk
+                            Verifikasi  Akun
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -17,9 +17,9 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
-                                            <th></th>
-                                            <th>Gambar</th>
-                                            <th>Kategori</th>
+                                            <th>Usia</th>
+                                            <th>Alamat</th>
+                                            <th>Keterangan</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -28,14 +28,14 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td><img src="" width="80px" height="80px" alt="">
+                                            <td>
                                             </td>
                                             <td></td>
-                                            <td><button type="button" class="btn btn-primary"><i
+                                            <!-- <td><button type="button" class="btn btn-primary"><i
                                                         class="fas fa-edit"></i>
                                                     Edit</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" ><i class="fas fa-trash-alt"></i>
-                                                    Hapus</button>
+                                                    Hapus</button> -->
                                             </td>
                                         </tr>
                                     </tbody>
@@ -46,7 +46,6 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn-info" onclick="window.location.href='daftarproduk/tambah'"><i class="fas fa-plus"></i> Tambah Produk</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">

@@ -27,13 +27,13 @@
                                     <tbody>
                                     @foreach($produks as $produk)
                                         <tr>
-                                            <td>{{$produk->ProdukID}}</td>
-                                            <td>{{$produk->Nama_Produk}}</td>
-                                            <td>{{$produk->Jenis_Produk}}</td>
-                                            <td>{{$produk->Produk_Deskripsi}}</td>
-                                            <td>@currency($produk->Harga_Produk)</td>
-                                            <td><img src="{{url('imgproduk/'.$produk->Gambar_Produk)}}" width="80px" height="80px" alt=""></td>
-                                            <td><button type="button" class="btn btn-primary" onclick="window.location.href='/daftarproduk/edit/{{$produk->ProdukID}}'"><i
+                                            <td>{{$produk->id_produk}}</td>
+                                            <td>{{$produk->nama_produk}}</td>
+                                            <td>{{$produk->jenis_produk}}</td>
+                                            <td>{{$produk->deskripsi_produk}}</td>
+                                            <td>@currency($produk->harga_produk)</td>
+                                            <td><img src="{{url('imgproduk/'.$produk->gambar_produk)}}" width="80px" height="80px" alt=""></td>
+                                            <td width="20%"><button type="button" class="btn btn-primary" onclick="window.location.href='/daftarproduk/edit/{{$produk->id_produk}}'"><i
                                                         class="fas fa-edit"></i>
                                                     Edit</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" ><i class="fas fa-trash-alt"></i>

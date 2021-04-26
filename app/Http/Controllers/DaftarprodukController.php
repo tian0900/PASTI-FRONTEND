@@ -18,16 +18,16 @@ class DaftarprodukController extends Controller
 
     public function store(Request $request){
         $produks = new Produk();
-        $produks->Nama_Produk = $request->Nama_Produk;
-        $produks->Jenis_Produk = $request->Jenis_Produk;
-        $produks->Harga_Produk = $request->Harga_Produk;
-        $produks->Produk_Deskripsi = $request->Produk_Deskripsi;
+        $produks->nama_produk = $request->nama_produk;
+        $produks->jenis_produk = $request->jenis_produk;
+        $produks->harga_produk = $request->harga_produk;
+        $produks->deskripsi_produk = $request->deskripsi_produk;
 
        
-        if ($request->hasFile('Gambar_Produk')){
-            $file= $request->file('Gambar_Produk')->getClientOriginalName();
-            $request->file('Gambar_Produk')->move('imgproduk',$file);
-            $produks->Gambar_Produk = $file;
+        if ($request->hasFile('gambar_produk')){
+            $file= $request->file('gambar_produk')->getClientOriginalName();
+            $request->file('gambar_produk')->move('imgproduk',$file);
+            $produks->gambar_produk = $file;
         } 
         $produks -> save();
         return redirect('daftarproduk');
@@ -42,19 +42,19 @@ class DaftarprodukController extends Controller
 
     public function update(Request $request, $ProdukID){
         $update = Produk::find($ProdukID);
-        $file = $update->Gambar_Produk;
+        $file = $update->gambar_produk;
 
-        if ($request->hasFile('Gambar_Produk')){
-            $file= $request->file('Gambar_Produk')->getClientOriginalName();
-            $request->file('Gambar_Produk')->move('imgproduk',$file);
-            $update->Gambar_Produk = $file;
+        if ($request->hasFile('gambar_produk')){
+            $file= $request->file('gambar_produk')->getClientOriginalName();
+            $request->file('gambar_produk')->move('imgproduk',$file);
+            $update->gambar_produk = $file;
         } 
         
-        $update->Nama_Produk= $request->Nama_Produk;
-        $update->Harga_Produk = $request->Harga_Produk;
-        $update->Produk_Deskripsi = $request->Produk_Deskripsi;
-        $update->Gambar_Produk = $file;
-        $update->Jenis_Produk = $request->Jenis_Produk;
+        $update->nama_produk= $request->nama_produk;
+        $update->harga_produk = $request->harga_produk;
+        $update->deskripsi_produk = $request->deskripsi_produk;
+        $update->gambar_produk = $file;
+        $update->jenis_produk = $request->jenis_produk;
         $update -> save();
        
         return redirect('daftarproduk');         
