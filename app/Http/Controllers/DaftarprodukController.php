@@ -34,14 +34,14 @@ class DaftarprodukController extends Controller
         
     }
 
-    public function edit($ProdukID){
-        $editproduks = Produk::find($ProdukID);
+    public function edit($id_produk){
+        $editproduks = Produk::find($id_produk);
        
         return view('admin.editproduk',compact('editproduks'));
     }
 
-    public function update(Request $request, $ProdukID){
-        $update = Produk::find($ProdukID);
+    public function update(Request $request, $id_produk){
+        $update = Produk::find($id_produk);
         $file = $update->gambar_produk;
 
         if ($request->hasFile('gambar_produk')){
@@ -61,8 +61,8 @@ class DaftarprodukController extends Controller
 
     }
 
-    public function delete($ProdukID){
-        $deleteproduks = Produk::find($ProdukID);
+    public function delete($id_produk){
+        $deleteproduks = Produk::find($id_produk);
         if( $deleteproduks->delete()){
            return redirect()->back();
         }
