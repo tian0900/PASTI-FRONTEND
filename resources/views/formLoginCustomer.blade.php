@@ -7,6 +7,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://kit.fontawesome.com/137cd3a750.js" crossorigin="anonymous"></script>
 
 <style>
 * {
@@ -361,7 +362,7 @@ font-weight: 400;
 
 <div class="cotn_principal">
 <div class="cont_centrar">
-<a href="/"><button type="button" class="btn btn-warning">< Back</button></a>
+    <button class="btn btn-light"><a href="/"><i class="fas fa-arrow-circle-left"> Kembali</i></a></button>
 
   <div class="cont_login">
 <div class="cont_info_log_sign_up">

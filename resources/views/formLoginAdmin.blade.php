@@ -28,7 +28,7 @@
         background-color:rgb(0, 0, 0);
     }
     </style>
-    <a href="/"><button type="button" class="btn btn-warning">< Back</button></a>
+    <button class="btn btn-light"><a href="/"><i class="fas fa-arrow-circle-left"> Kembali</i></a></button>
 <div class="container">
 	<div class="row">
 		 <h1><i class="fa fa-users-cog" aria-hidden="true"></i> Login Admin</h1>
