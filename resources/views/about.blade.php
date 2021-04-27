@@ -189,12 +189,6 @@
                   </div>
                 </div>
               </div>
-              <div class="down-content">
-                <h4>Unknow</h4>
-                <span>developer</span>
-                <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
-              </div>
             </div>
           </div>
         </div>
