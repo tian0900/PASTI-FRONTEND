@@ -47,6 +47,9 @@
                     <a class="scroll-link" href="/verifikasiakun"><i class="fas fa-user-cog"></i>Verifikasi Akun</a>
                 </li>
                 <li>
+                    <a class="scroll-link" href="/daftarpemesanan"><i class="fas fa-user-cog"></i>Pemesanan</a>
+                </li>
+                <li>
                     <a class="scroll-link" href="#section-6"><i class="fas fa-user"></i>Log Out</a>
                 </li>
 

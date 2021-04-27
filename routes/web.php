@@ -5,6 +5,7 @@ use App\Http\Controllers\DaftarprodukController ;
 use App\Http\Controllers\SipalbabController;
 use App\Http\Controllers\VerifikasiController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\DaftarpemesananController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,7 +34,7 @@ Route::get('/about', function () {
 });
 
 
-
+// Daftar Produk
 Route::get('/daftarproduk', [DaftarprodukController::class, 'index']);
 Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
 Route::post('daftarproduk/store', [DaftarprodukController::class, 'store'])->name('daftarproduk.store');
@@ -41,6 +42,8 @@ Route::get('/daftarproduk/edit/{id_produk}', [DaftarprodukController::class, 'ed
 Route::post('daftarproduk/update/{id_produk}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
 Route::get('daftarproduk/delete/{id_produk}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
 
+
+Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
 
 Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
 
