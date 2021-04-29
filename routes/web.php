@@ -38,9 +38,9 @@ Route::get('/about', function () {
 Route::get('/daftarproduk', [DaftarprodukController::class, 'index']);
 Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
 Route::post('daftarproduk/store', [DaftarprodukController::class, 'store'])->name('daftarproduk.store');
-Route::get('/daftarproduk/edit/{id_produk}', [DaftarprodukController::class, 'edit']);
-Route::post('daftarproduk/update/{id_produk}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
-Route::get('daftarproduk/delete/{id_produk}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
+Route::get('/daftarproduk/edit/{produk_id}', [DaftarprodukController::class, 'edit']);
+Route::post('daftarproduk/update/{produk_id}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
+Route::get('daftarproduk/delete/{produk_id}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
 
 
 Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);

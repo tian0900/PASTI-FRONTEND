@@ -18,51 +18,49 @@ class DaftarprodukController extends Controller
 
     public function store(Request $request){
         $produks = new Produk();
-        $produks->nama_produk = $request->nama_produk;
-        $produks->jenis_produk = $request->jenis_produk;
-        $produks->harga_produk = $request->harga_produk;
-        $produks->deskripsi_produk = $request->deskripsi_produk;
+        $produks->nama = $request->nama;
+        $produks->kategori = $request->kategori;
+        $produks->harga = $request->harga;
 
        
-        if ($request->hasFile('gambar_produk')){
-            $file= $request->file('gambar_produk')->getClientOriginalName();
-            $request->file('gambar_produk')->move('imgproduk',$file);
-            $produks->gambar_produk = $file;
+        if ($request->hasFile('gambar')){
+            $file= $request->file('gambar')->getClientOriginalName();
+            $request->file('gambar')->move('imgproduk',$file);
+            $produks->gambar = $file;
         } 
         $produks -> save();
         return redirect('daftarproduk');
         
     }
 
-    public function edit($id_produk){
-        $editproduks = Produk::find($id_produk);
+    public function edit($produk_id){
+        $editproduks = Produk::find($produk_id);
        
         return view('admin.editproduk',compact('editproduks'));
     }
 
-    public function update(Request $request, $id_produk){
-        $update = Produk::find($id_produk);
-        $file = $update->gambar_produk;
+    public function update(Request $request, $produk_id){
+        $update = Produk::find($produk_id);
+        $file = $update->gambar;
 
-        if ($request->hasFile('gambar_produk')){
-            $file= $request->file('gambar_produk')->getClientOriginalName();
-            $request->file('gambar_produk')->move('imgproduk',$file);
-            $update->gambar_produk = $file;
+        if ($request->hasFile('gambar')){
+            $file= $request->file('gambar')->getClientOriginalName();
+            $request->file('gambar')->move('imgproduk',$file);
+            $update->gambar = $file;
         } 
         
-        $update->nama_produk= $request->nama_produk;
-        $update->harga_produk = $request->harga_produk;
-        $update->deskripsi_produk = $request->deskripsi_produk;
-        $update->gambar_produk = $file;
-        $update->jenis_produk = $request->jenis_produk;
+        $update->nama= $request->nama;
+        $update->harga = $request->harga;
+        $update->gambar = $file;
+        $update->kategori = $request->kategori;
         $update -> save();
        
         return redirect('daftarproduk');         
 
     }
 
-    public function delete($id_produk){
-        $deleteproduks = Produk::find($id_produk);
+    public function delete($produk_id){
+        $deleteproduks = Produk::find($produk_id);
         if( $deleteproduks->delete()){
            return redirect()->back();
         }

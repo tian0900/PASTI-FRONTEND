@@ -16,15 +16,12 @@ class FeedbackSeeder extends Seeder
         //
         \App\Models\Feedback::insert([
             [
-                'nama' => 'Marcellino',
                 'deskripsi' => 'Websitenya sangat memuaskan dan menarik'
             ],
             [
-                'nama' => 'Samuel',
                 'deskripsi' => 'Websitenya tidak menarik dan membosankan'
             ],
             [
-                'nama' => 'Nesty Tampubolon',
                 'deskripsi' => 'Websitenya sangat membantu'
             ]
         ]);

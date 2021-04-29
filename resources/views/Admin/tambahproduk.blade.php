@@ -12,38 +12,29 @@
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Nama</label>
                     <div class="col-sm-9">
-                        <input type="text" required="required" id="nama" name="nama_produk" class="form-control" >
+                        <input type="text" required="required" id="nama" name="nama" class="form-control" >
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Jenis</label>
                     <div class="col-sm-9">
-                        <select class="form-control"  required="required" name="jenis_produk" aria-label="Default select example" >
+                        <select class="form-control"  required="required" name="kategori" aria-label="Default select example" >
                             <option value="Sirup">Sirup</option>
                             <option value="Popok Bayi">Popok Bayi</option>
                             <option value="Tablet">Tablet</option>
                         </select>
                     </div>
                 </div>
-                <div class="mb-3 row">
-                        <label class="col-sm-3 col-form-label">Deskripsi</label>
-                        <div class="col-sm-9">
-                        <div class="form-floating">
-                            <textarea class="form-control"  required="required" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="deskripsi_produk"></textarea>
-        
-                         </div>
-                        </div>
-                    </div>
                     <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Gambar</label>
                     <div class="col-sm-9">
-                        <input class="form-control" id="formFileMultiple" required="required"  name="gambar_produk" type="file" id="formFileMultiple" multiple >
+                        <input class="form-control" id="formFileMultiple" required="required"  name="gambar" type="file" id="formFileMultiple" multiple >
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Harga</label>
                     <div class="col-sm-9">
-                        <input type="number" required="required" id="harga" name="Harga_Produk" class="form-control" >
+                        <input type="number" required="required" id="harga" name="harga" class="form-control" >
                     </div>
                 </div>
                
