@@ -22,10 +22,11 @@
                         <select class="form-control"  required="required" name="kategori" aria-label="Default select example" >
                             <option value="{{$editproduks->kategori}}">{{$editproduks->kategori}}</option>
                             <option value="Sirup">Sirup</option>
-                            <option value="Popok Bayi">Popok Bayi</option>
+                            <option value="Popok dewasa">Popok Dewasa</option>
                             <option value="Tablet">Tablet</option>
-                           
-            
+                            <option value="Minyak Herbal">Minyak Herbal</option>
+                            <option value="Kontrasepsi">Alat Kontrasepsi</option>
+                            <option value="bayi">Perlengkapan Bayi</option>
                         </select>
                     </div>
                 </div>
@@ -34,18 +35,18 @@
                     <div class="col-sm-9">
                         <input type="number" required="required" id="harga" name="harga" class="form-control"  value="{{$editproduks->harga}}">
                     </div>
-                </div>             
+                </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Gambar</label>
                     <div class="col-sm-9">
                         <input class="form-control" id="formFileMultiple"  name="gambar" type="file" id="formFileMultiple" multiple value="{{$editproduks->gambar}}" > {{$editproduks->gambar}}
                     </div>
                 </div>
-                
+
 				<button type="button" class="btn btn-danger" onclick="window.location.href='/daftarproduk'"><i class="fas fa-times"></i> Batal</button>
 				<button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Edit</button>
             </form>
-            
+
 
         </div>
     </div>
