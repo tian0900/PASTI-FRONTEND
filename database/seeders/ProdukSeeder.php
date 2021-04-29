@@ -33,10 +33,12 @@ class ProdukSeeder extends Seeder
                 'harga' => 3000,
                 'gambar' => 'Paracetamol500mg.jpg'
             ],
+            [
             'nama' => 'OBH',
             'kategori' => 'Sirup',
             'harga' => 15000,
             'gambar' => 'obh.jpg'
+            ]
         ]);
     }
 }
