@@ -12,7 +12,8 @@
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
 	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
 </head>
-<body class="templatemo-bg-image-2">
+<body class="templatemo-bg-image-2" style="background-color: rgb(70, 90, 40);
+	background-image: url({{asset('image')}}/pembayaran.jpg);">
 	<div class="container">
 		<div class="col-md-12">			
 			<form class="form-horizontal templatemo-contact-form-1" role="form" action="#" method="post">
