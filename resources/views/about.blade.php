@@ -5,7 +5,7 @@
           <div class="col-md-12">
             <div class="text-content">
               <h4>about us</h4>
-              <h2>Sipalbab</h2>
+              <h2 style="color:red;">SOPANAGAMAN</h2>
             </div>
           </div>
         </div>
