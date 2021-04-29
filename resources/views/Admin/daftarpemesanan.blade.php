@@ -16,16 +16,21 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama</th>
-                                            <th>Jenis</th>
-                                            <th>Deskripsi</th>
-                                            <th>Harga</th>
-                                            <th>Gambar</th>
+                                            <th>Pemesanan</th>
+                                            <th>Total</th>
+                                            <th>Lokasi</th>
+                                            <th>Bukti Pembayaran</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn btn-warning"><i class="fas fa-info"></i> Detail</button>
+                                            <button type="button" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button></td>
                                     </tbody>
                                 </table>
                             </div>
