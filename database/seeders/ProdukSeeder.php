@@ -34,17 +34,22 @@ class ProdukSeeder extends Seeder
                 'gambar' => 'Paracetamol500mg.jpg'
             ],
             [
-<<<<<<< HEAD
-            'nama' => 'OBH',
-            'kategori' => 'Sirup',
-            'harga' => 15000,
-            'gambar' => 'obh.jpg'
-=======
                 'nama' => 'OBH',
                 'kategori' => 'Sirup',
                 'harga' => 15000,
                 'gambar' => 'obh.jpg'
->>>>>>> d03c4f3c78c8a01ccf114f8ff4f6776ee6207fcf
+            ],
+            [
+                'nama' => 'Sutra',
+                'kategori' => 'AlatKontrasepsi',
+                'harga' => 18000,
+                'gambar' => 'sutra.jpg'
+            ],
+            [
+                'nama' => 'Masker',
+                'kategori' => 'Popok',
+                'harga' => 20000,
+                'gambar' => 'masker.jpg'
             ]
         ]);
     }
