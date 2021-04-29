@@ -17,29 +17,37 @@ class CustomerSeeder extends Seeder
         \App\Models\Customer::insert([
             [
                 'nama' => 'Marcellino Lumban Gaol',
-                'username' => 'marcellino',
+                'email' => 'marcellino@gmail.com',
                 'password' => 'marcell123',
+                'usia' => 18,
+                'gender' => 'L',
                 'alamat' => 'Laguboti',
                 'no_telepon' => '081234567890' 
             ],
             [
                 'nama' => 'Christian Laurens Sihotang',
-                'username' => 'tian',
+                'email' => 'tian@gmail.com',
                 'password' => 'tian123',
+                'usia' => 18,
+                'gender' => 'L',
                 'alamat' => 'Balige',
                 'no_telepon' => '081345678902' 
             ],
             [
                 'nama' => 'Samuel Prayoga Tampubolon',
-                'username' => 'samuel',
+                'email' => 'samuel@gmail.com',
                 'password' => 'samuel123',
+                'usia' => 18,
+                'gender' => 'L',
                 'alamat' => 'Tarutung',
                 'no_telepon' => '0813456789235' 
             ],
             [
                 'nama' => 'Nesty Gloria Tampubolon',
-                'username' => 'nesty ',
+                'email' => 'nesty ',
                 'password' => 'nesty123',
+                'usia' => 18,
+                'gender' => 'P',
                 'alamat' => 'Tampubolon',
                 'no_telepon' => '081345678900' 
             ]

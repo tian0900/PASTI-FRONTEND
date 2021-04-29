@@ -9,6 +9,7 @@ class Feedback extends Model
 {
     use HasFactory;
     protected $table = 'feedback';
+    protected $primaryKey = 'feedback_id';
 }
 
 

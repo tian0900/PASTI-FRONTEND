@@ -6,6 +6,7 @@ use App\Http\Controllers\SipalbabController;
 use App\Http\Controllers\VerifikasiController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\DaftarpemesananController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,10 +20,8 @@ use App\Http\Controllers\DaftarpemesananController;
 
 Route::get('/', [SipalbabController::class, 'index']);
 Route::get('/produk', [ProdukController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/contact', function () {
-    return view('contact');
-});
 Route::get('/loginCustomer', function () {
     return view('formLoginCustomer');
 });
