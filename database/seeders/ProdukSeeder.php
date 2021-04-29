@@ -18,7 +18,7 @@ class ProdukSeeder extends Seeder
             [
                 'nama' => 'Antangin Herbal',
                 'kategori' => 'Sirup',
-                'harga' => 4000 ,
+                'harga' => 4000,
                 'gambar' => 'Antanginherbal.jpg'
             ],
             [
@@ -33,10 +33,12 @@ class ProdukSeeder extends Seeder
                 'harga' => 3000,
                 'gambar' => 'Paracetamol500mg.jpg'
             ],
-            'nama' => 'OBH',
-            'kategori' => 'Sirup',
-            'harga' => 15000,
-            'gambar' => 'obh.jpg'
+            [
+                'nama' => 'OBH',
+                'kategori' => 'Sirup',
+                'harga' => 15000,
+                'gambar' => 'obh.jpg'
+            ]
         ]);
     }
 }
