@@ -18,7 +18,7 @@
       <img src="{{url('imgproduk/'.$produks->gambar)}}" alt="" width="150px" height="200px">
     </div>
     <div class="col-sm-8">
-    <form action="{{route('daftarproduk.store')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('pesanan.store')}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
                 <div class="mb-12 row">
                     <label class="col-sm-3 col-form-label">Nama</label>
@@ -31,9 +31,10 @@
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Quantity</label>
                     <div class="col-sm-9">
-                        <input type="number" required="required" id="harga" name="harga" class="form-control" >
-                        <input type="hidden" name="produk_id" class="form-control"
-                                                value="{{$produks->produk_id}}">
+                        <input type="number" required="required" id="harga" name="jumlah" class="form-control" >
+                        <input type="hidden" name="produk_id" class="form-control" value="{{$produks->produk_id}}">
+                        <input type="hidden" name="harga" class="form-control" value="{{$produks->harga}}">
+                        
                     </div>
                 </div>
 				<button type="button" class="btn btn-danger" onclick="window.location.href='/'"><i class="fas fa-times"></i> Batal</button>

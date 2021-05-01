@@ -72,6 +72,9 @@
                <li class="nav-item">
                 <a class="nav-link" href="/loginAdmin">Login Admin</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop/1"><i class="fas fa-shopping-cart"></i> Shop</a>
+              </li>
             </ul>
           </div>
         </div>

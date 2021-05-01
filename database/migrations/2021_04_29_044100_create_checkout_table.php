@@ -15,15 +15,13 @@ class CreateCheckoutTable extends Migration
     {
         Schema::create('checkout', function (Blueprint $table) {
             $table->increments('checkout_id');
-            $table->unsignedInteger('orders_id');            
-            $table->unsignedInteger('orderdetail_id');
+            $table->unsignedInteger('produk_id');            
             $table->unsignedInteger('customer_id');
             $table->integer('jumlah');
             $table->integer('total_detail');
             $table->timestamps();
 
-            $table->foreign('orders_id')->references('orders_id')->on('orders');
-            $table->foreign('orderdetail_id')->references('orderdetail_id')->on('orderdetail');
+            $table->foreign('produk_id')->references('produk_id')->on('produk');
             $table->foreign('customer_id')->references('customer_id')->on('customer');
         });
     }

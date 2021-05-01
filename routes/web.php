@@ -9,6 +9,8 @@ use App\Http\Controllers\DaftarpemesananController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PesananController;
+use App\Http\Controllers\ShopController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,3 +55,7 @@ Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
 Route::get('/pembayaran', [PembayaranController::class, 'index']);
 
 Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);
+Route::post('pesanan/store', [PesananController::class, 'store'])->name('pesanan.store');
+
+Route::get('/shop/{customer_id}', [ShopController::class, 'index']);
+Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'index']);
