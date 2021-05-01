@@ -58,4 +58,5 @@ Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);
 Route::post('pesanan/store', [PesananController::class, 'store'])->name('pesanan.store');
 
 Route::get('/shop/{customer_id}', [ShopController::class, 'index']);
-Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'index']);
+Route::post('shop/store', [ShopController::class, 'store'])->name('shop.store');
+Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'delete']);

@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedInteger('customer_id');            
             $table->unsignedInteger('admin_id');
             $table->integer('total');
-            $table->text('lokasi');
+            $table->string('keterangan',100);
             $table->text('bukti_bayar',200);
             $table->timestamps();
 

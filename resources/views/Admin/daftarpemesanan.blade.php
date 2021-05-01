@@ -18,19 +18,21 @@
                                             <th>No</th>
                                             <th>Pemesanan</th>
                                             <th>Total</th>
-                                            <th>Lokasi</th>
+                                            <th>Keterangan</th>
                                             <th>Bukti Pembayaran</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($order as $orders)
                                             <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>{{$orders->nama}}</td>
+                                            <td>@currency($orders->total)</td>
                                             <td></td>
                                             <td></td>
                                             <td><button type="button" class="btn btn-warning"><i class="fas fa-info"></i> Detail</button>
                                             <button type="button" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button></td>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>
