@@ -7,6 +7,8 @@ use App\Http\Controllers\VerifikasiController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\DaftarpemesananController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PembayaranController;
+use App\Http\Controllers\PesananController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,7 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [SipalbabController::class, 'index']);
 Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
+Route::post('feedback/store', [ContactController::class, 'store'])->name('feedback.store');
 
 Route::get('/loginCustomer', function () {
     return view('formLoginCustomer');
@@ -46,3 +49,7 @@ Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
 
 Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
 
+
+Route::get('/pembayaran', [PembayaranController::class, 'index']);
+
+Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);

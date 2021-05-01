@@ -16,12 +16,18 @@ class FeedbackSeeder extends Seeder
         //
         \App\Models\Feedback::insert([
             [
+                'customer_id' => 1,
+                'admin_id' => 1,
                 'deskripsi' => 'Websitenya sangat memuaskan dan menarik'
             ],
             [
+                'customer_id' => 2,
+                'admin_id' => 1,
                 'deskripsi' => 'Websitenya tidak menarik dan membosankan'
             ],
             [
+                'customer_id' => 3,
+                'admin_id' => 1,
                 'deskripsi' => 'Websitenya sangat membantu'
             ]
         ]);

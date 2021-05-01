@@ -61,20 +61,30 @@
 <!-- About Here -->
 
 
-    <div class="latest-products">
+<!--Daftar Produk-->
+<div class="latest-products">
       <div class="container">
         <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Latest Products</h2>
+              <a href="/produk">view all products <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
             <div class="product-item">
-              <a href="#"><img src="imgproduk/{{$produks->gambar}}" alt=""></a>
+             <img src="imgproduk/{{$produks->gambar}}" alt=""width="80px" height="250px" >
               <div class="down-content">
-                <a href="#"><h4>{{$produks->nama}}</h4></a>
+                <h4>{{$produks->nama}}</h4>
                 <h6>@currency($produks->harga)</h6>
+                <a href="pesanan/{{$produks->produk_id}}" class="btn btn-success">Beli</a>
               </div>
+              
             </div>
           </div>
           @endforeach
+         
         </div>
       </div>
     </div>

@@ -18,9 +18,8 @@ class CreateCheckoutTable extends Migration
             $table->unsignedInteger('orders_id');            
             $table->unsignedInteger('orderdetail_id');
             $table->unsignedInteger('customer_id');
-            $table->integer('total');
-            $table->text('lokasi');
-            $table->text('bukti_bayar',200);
+            $table->integer('jumlah');
+            $table->integer('total_detail');
             $table->timestamps();
 
             $table->foreign('orders_id')->references('orders_id')->on('orders');
