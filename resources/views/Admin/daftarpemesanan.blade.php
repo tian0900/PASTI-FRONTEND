@@ -7,7 +7,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table mr-1"></i>
-                            Daftar Produk
+                            Daftar Pemesanan
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -16,7 +16,7 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Pemesanan</th>
+                                            <th>Nama</th>
                                             <th>Total</th>
                                             <th>Keterangan</th>
                                             <th>Bukti Pembayaran</th>
@@ -28,10 +28,25 @@
                                             <td></td>
                                             <td>{{$orders->nama}}</td>
                                             <td>@currency($orders->total)</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><button type="button" class="btn btn-warning"><i class="fas fa-info"></i> Detail</button>
-                                            <button type="button" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button></td>
+                                            <td><form action="{{route('daftarpemesanan.update',$orders->orders_id)}}" method="post" enctype="multipart/form-data">
+            {{ csrf_field() }}
+
+                   
+                        <select class="form-control"  required="required" name="keterangan" aria-label="Default select example" >
+                            <option value="{{$orders->keterangan}}">{{$orders->keterangan}}</option>
+                            <option value="Verifikasi">Verifikasi</option>
+                            <option value="Proses">Proses</option>
+                            <option value="Antar">Antar</option>
+                            <option value="Selesai">Selesai</option>
+                        </select>
+               
+            </td>
+                                            <td><img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" width="80px" height="80px" alt=""></td>
+                                            <td><button type="button" class="btn btn-warning" onclick="window.location.href='detailpemesanan/{{$orders->orders_id}}'"><i class="fas fa-info"></i> Detail</button>
+                                            <button type="submit" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button>
+                                            </form>
+                                            </td>
+
                                     @endforeach
                                     </tbody>
                                 </table>

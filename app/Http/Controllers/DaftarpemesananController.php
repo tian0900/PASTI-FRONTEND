@@ -13,4 +13,12 @@ class DaftarpemesananController extends Controller
         ->get();
         return view('admin.daftarpemesanan',compact('order'));
     }
+
+    public function update(Request $request, $orders_id){
+        $update = Orders::find($orders_id);
+        $update->keterangan = $request->keterangan;
+        $update -> save();
+        return redirect()->back();         
+
+    }
 }

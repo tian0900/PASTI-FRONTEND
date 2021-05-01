@@ -41,6 +41,7 @@ class ShopController extends Controller
         $pemesanan->customer_id =  1;
         $pemesanan->admin_id =  1;
         $pemesanan->total = $temp;
+        $pemesanan->keterangan = "Verifikasi";
         $file = $pemesanan->bukti_bayar;
 
         if ($request->hasFile('bukti_bayar')){

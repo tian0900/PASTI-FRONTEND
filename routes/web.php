@@ -10,6 +10,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\DetailpemesananController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +50,10 @@ Route::get('daftarproduk/delete/{produk_id}', [DaftarprodukController::class, 'd
 
 
 Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
+Route::post('daftapemesanan/update/{orders_id}', [DaftarpemesananController::class, 'update'])->name('daftarpemesanan.update');
+
+Route::get('/detailpemesanan/{orders_id}', [DetailpemesananController::class, 'index']);
+
 
 Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
 
