@@ -78,7 +78,7 @@
               <div class="down-content">
                 <h4>{{$produks->nama}}</h4>
                 <h6>@currency($produks->harga)</h6>
-                <a href="pesanan/{{$produks->produk_id}}" class="btn btn-success">Beli</a>
+                  <a href="pesanan/{{$produks->produk_id}}" class="btn btn-success">Beli</a>
               </div>
               
             </div>

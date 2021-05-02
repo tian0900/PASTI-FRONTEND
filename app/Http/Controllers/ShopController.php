@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Checkout;
 use App\Models\Orders;
+use App\Models\User;
 use App\Models\Orderdetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -12,12 +13,32 @@ class ShopController extends Controller
     public function index($checkout_id){
         $checkout = Checkout::find($checkout_id);
         $pesan = DB::table('checkout')
-        ->select('customer.nama as namacustomer','customer.*','checkout.*')
-        ->join('customer', 'checkout.customer_id','=','customer.customer_id')
+        ->select('users.name as namauser','users.*','checkout.*','produk.*')
+        ->join('users', 'checkout.user_id','=','users.user_id')
         ->join('produk', 'produk.produk_id','=','checkout.produk_id')
-        ->where('customer.customer_id','=',1)
+        ->where('users.user_id','=',auth()->id())
         ->get();
-        return view('shop',compact('pesan'));
+
+        $bio =  Checkout::inRandomOrder()->limit(1)
+        ->select('users.name as namauser','users.*','checkout.*')
+        ->join('users', 'checkout.user_id','=','users.user_id')
+        ->where('users.user_id','=',auth()->id())
+        ->get();
+
+        //  $joinpemesanan = DB::table('checkout')
+        // ->join('checkout', 'users.user_id','=','checkout.user_id')
+        // ->select(DB::raw('sum(checkout.totaldetail) as total')) 
+        // ->groupBy('users.user_id')
+        // ->get();
+        
+        if(count($pesan) == 0){
+            return redirect('/');
+        } else {
+            
+            return view('shop',compact('pesan','bio'));
+        }
+   
+        
     }
 
     public function delete($checkout_id){
@@ -31,14 +52,14 @@ class ShopController extends Controller
     public function store(Request $request){
         //                
 
-        $checkout = Checkout::where('customer_id',1)->get();
+        $checkout = Checkout::where('user_id',auth()->id())->get();
 
         $temp = 0;
         foreach($checkout as $checkouts){
             $temp = $temp + $checkouts->total_detail;
         }
         $pemesanan= new Orders();
-        $pemesanan->customer_id =  1;
+        $pemesanan->user_id = auth()->id() ;
         $pemesanan->admin_id =  1;
         $pemesanan->total = $temp;
         $pemesanan->keterangan = "Verifikasi";
@@ -61,11 +82,12 @@ class ShopController extends Controller
 
             }  
             
-            $deletecheckout = Checkout::where('customer_id',1);
+            $deletecheckout = Checkout::where('user_id',auth()->id());
             if( $deletecheckout->delete()){
+                return redirect('/');
             }
     }
-        return redirect()->back();
+        return redirect('/');
 
     }
 }

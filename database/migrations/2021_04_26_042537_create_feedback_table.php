@@ -15,12 +15,12 @@ class CreateFeedbackTable extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->increments('feedback_id');
-            $table->unsignedInteger('customer_id');
+            $table->unsignedInteger('user_id');
             $table->unsignedInteger('admin_id');
             $table->text('deskripsi');
             $table->timestamps();
 
-            $table->foreign('customer_id')->references('customer_id')->on('customer');
+            $table->foreign('user_id')->references('user_id')->on('users');
             $table->foreign('admin_id')->references('admin_id')->on('admin');
         });
     }

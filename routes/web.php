@@ -40,29 +40,38 @@ Route::get('/about', function () {
 });
 
 
-// Daftar Produk
-Route::get('/daftarproduk', [DaftarprodukController::class, 'index']);
-Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
-Route::post('daftarproduk/store', [DaftarprodukController::class, 'store'])->name('daftarproduk.store');
-Route::get('/daftarproduk/edit/{produk_id}', [DaftarprodukController::class, 'edit']);
-Route::post('daftarproduk/update/{produk_id}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
-Route::get('daftarproduk/delete/{produk_id}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
-
-
-Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
-Route::post('daftapemesanan/update/{orders_id}', [DaftarpemesananController::class, 'update'])->name('daftarpemesanan.update');
-
-Route::get('/detailpemesanan/{orders_id}', [DetailpemesananController::class, 'index']);
-
-
 Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
 
 
-Route::get('/pembayaran', [PembayaranController::class, 'index']);
+Auth::routes();
 
-Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);
-Route::post('pesanan/store', [PesananController::class, 'store'])->name('pesanan.store');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/shop/{customer_id}', [ShopController::class, 'index']);
-Route::post('shop/store', [ShopController::class, 'store'])->name('shop.store');
-Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'delete']);
+Route::group(['middleware'=>['auth','is_admin']],function(){
+    // Daftar Produk
+        Route::get('/daftarproduk', [DaftarprodukController::class, 'index'])->middleware('is_admin');
+        Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
+        Route::post('daftarproduk/store', [DaftarprodukController::class, 'store'])->name('daftarproduk.store');
+        Route::get('/daftarproduk/edit/{produk_id}', [DaftarprodukController::class, 'edit']);
+        Route::post('daftarproduk/update/{produk_id}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
+        Route::get('daftarproduk/delete/{produk_id}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
+
+
+
+        Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
+        Route::post('daftapemesanan/update/{orders_id}', [DaftarpemesananController::class, 'update'])->name('daftarpemesanan.update');
+
+        Route::get('/detailpemesanan/{orders_id}', [DetailpemesananController::class, 'index']);
+});
+
+Route::group(['middleware'=>['auth']],function(){
+    Route::get('/pembayaran', [PembayaranController::class, 'index']);
+
+    Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);
+    Route::post('pesanan/store', [PesananController::class, 'store'])->name('pesanan.store');
+    
+    Route::get('/shop/{customer_id}', [ShopController::class, 'index']);
+    Route::post('shop/store', [ShopController::class, 'store'])->name('shop.store');
+    Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'delete']);
+
+});

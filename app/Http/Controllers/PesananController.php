@@ -21,7 +21,7 @@ class PesananController extends Controller
         $checkout->produk_id = $request->produk_id;
         $checkout->jumlah = $request->jumlah;
         $checkout->total_detail = $request->jumlah * $request->harga;
-        $checkout->customer_id = 1;
+        $checkout->user_id = auth()->id();
         $checkout->save();
 
         return redirect()->back();

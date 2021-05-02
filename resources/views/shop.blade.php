@@ -1,4 +1,5 @@
 @include('navbar')
+
 <style>
 .row{
     padding:10px;
@@ -7,23 +8,19 @@
     margin: 0  auto;
 }
 </style>
+
     <!-- Page Content -->
     <div class="page-heading contact-heading header-text">
       <div class="container">
     
           <div class="col-mb-12">
-    
-            <div class="card border-primary mb-12 header-text" >
-  <div class="card-header">Checkout</div>
+          
+          <div class="card" style="margin-bottom:40px">
   <div class="card-body">
-  <div class="row">
-    <div class="col-sm-12">
-    <form action="{{route('shop.store')}}" method="post" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            @foreach($pesan as $pesans)
-                <div class="mb-12 row">
+  <div class="mb-12 row">
+  @foreach($bio as $pesans)
                     <label class="col-sm-4 col-form-label">Nama</label>
-                    <label class=" col-form-label text-start">{{$pesans->namacustomer}}</label>
+                    <label class=" col-form-label text-start">{{$pesans->namauser}}</label>
                 </div>
                 <div class="mb-12 row">
                     <label class="col-sm-4 col-form-label">No Telepon </label>
@@ -37,6 +34,21 @@
                     <label class="col-sm-4 col-form-label">Total Harga</label>
                     <label class=" col-form-label text-start"></label>
                 </div>
+                @endforeach
+  </div>
+</div>
+            <div class="card border-primary mb-12 header-text" >
+          
+  <div class="card-header">Checkout</div>
+  <div class="card-body">
+  <div class="row">
+    <div class="col-sm-12">
+  
+
+    <form action="{{route('shop.store')}}" method="post" enctype="multipart/form-data">
+            {{ csrf_field() }}
+           
+                
                 <div class="mb-12 row">
                     <label class="col-sm-4 col-form-label">Bukti Pembayaran</label>
                     <div class="col-sm-8">
@@ -44,7 +56,7 @@
                     </div>
                     <hr>
                 </div>
-                @endforeach
+                
                 <hr size="9px">
                 <hr>
                 @foreach($pesan as $pesan)
@@ -72,6 +84,7 @@
                 </div>
 				
             </form>
+        
     </div>
   </div>
   </div>
@@ -104,5 +117,5 @@
     </div>
   </div>
 
-
+  
 @include('footer')
