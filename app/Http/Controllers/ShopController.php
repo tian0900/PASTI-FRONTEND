@@ -25,24 +25,24 @@ class ShopController extends Controller
         ->where('users.user_id','=',auth()->id())
         ->get();
 
-        //  $joinpemesanan = DB::table('checkout')
-        // ->join('checkout', 'users.user_id','=','checkout.user_id')
-        // ->select(DB::raw('sum(checkout.totaldetail) as total')) 
-        // ->groupBy('users.user_id')
-        // ->get();
+         $join = DB::table('checkout')
+        ->join('users', 'users.user_id','=','checkout.user_id')
+        ->select(DB::raw('sum(checkout.total_detail) as total')) 
+        ->groupBy('users.user_id')
+        ->get();
         
         if(count($pesan) == 0){
             return redirect('/');
         } else {
             
-            return view('shop',compact('pesan','bio'));
+            return view('shop',compact('pesan','bio','join'));
         }
    
         
     }
 
-    public function delete($checkout_id){
-        $delete = Checkout::find($checkout_id);
+    public function delete($user_id){
+        $delete = Checkout::find($user_id);
         if( $delete->delete()){
            return redirect()->back();
         }

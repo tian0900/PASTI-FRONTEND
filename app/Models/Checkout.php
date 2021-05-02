@@ -10,4 +10,8 @@ class Checkout extends Model
     use HasFactory;
     protected $table = 'checkout';
     protected $primaryKey = 'checkout_id';
+
+    public function users(){	
+    	return $this->belongsTo('App\Models\Users')->withDefault();
+    }
 }

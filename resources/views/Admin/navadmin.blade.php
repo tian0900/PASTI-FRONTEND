@@ -50,7 +50,7 @@
                     <a class="scroll-link" href="/daftarpemesanan"><i class="fas fa-shopping-basket"></i>Pemesanan</a>
                 </li>
                 <li>
-                    <a class="scroll-link" href="#section-6"><i class="fas fa-user"></i>Log Out</a>
+                    <a class="scroll-link" href="{{ route('logout') }}" ><i class="fas fa-user"></i>Log Out</a>
                 </li>
 
             </ul>

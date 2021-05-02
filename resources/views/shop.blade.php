@@ -75,11 +75,10 @@
                     <label class=" col-form-label text-start">@currency($pesan->total_detail)</label>
                     <input type="hidden" required="required" name="total_detail" class="form-control" value="{{$pesan->total_detail}}">
                 </div>
-                <button type="button" class="btn btn-danger col-sm-5" data-toggle="modal" data-target="#myModal" ><i class="fas fa-trash-alt"></i> Hapus</button>
                 <hr>
                 @endforeach
                 <div class="card-footer">
-                <button type="button" class="btn btn-danger" onclick="window.location.href='/'"><i class="fas fa-times"></i> Batal</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><i class="fas fa-times"></i> Batal</button>
 				<button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Bayar</button>
                 </div>
 				
