@@ -9,7 +9,7 @@ class DaftarpemesananController extends Controller
     //
     public function index(){
         $order = DB::table('orders')
-        ->join('customer', 'orders.customer_id','=','customer.customer_id')
+        ->join('users', 'orders.user_id','=','users.user_id')
         ->get();
         return view('admin.daftarpemesanan',compact('order'));
     }
