@@ -39,7 +39,7 @@
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
@@ -56,7 +56,7 @@
                 <a class="nav-link" href="/">Home
                   <span class="sr-only">(current)</span>
                 </a>
-              </li> 
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="/produk">Our Products</a>
               </li>
@@ -65,9 +65,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/loginCustomer">Login Customer</a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="/loginAdmin">Login Admin</a>
