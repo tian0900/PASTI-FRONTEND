@@ -41,11 +41,11 @@
 			  <h3><strong>Why you must choose us?</strong></h3> 
 			  <br>
               <ul class="featured-list">
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Have a health license </p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Products are guaranteed to be in the newest and best quality </p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Friendly service</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Has cooperated with local hospitals</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;The location is in the middle of the city so that it is easy to reach</p><br>
+              <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Toko obat Berizin</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Produk Berkualitas</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Pelayanan Terbaik</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Menerima resep Dokter</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Berada di Pusat kota Balige</p><br>
               </ul>
               <a href="/about" class="filled-button">Read More</a>
             </div>
