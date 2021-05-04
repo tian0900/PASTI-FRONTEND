@@ -1,4 +1,4 @@
-@include('admin.navadmin')
+    @include('admin.navadmin')
 
 
 <div class="edit">

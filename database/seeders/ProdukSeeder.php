@@ -48,7 +48,7 @@ class ProdukSeeder extends Seeder
             [
                 'nama' => 'Masker',
                 'kategori' => 'Popok',
-                'harga' => 20000,
+                'harga' => 2000,
                 'gambar' => 'masker.jpg'
             ]
         ]);

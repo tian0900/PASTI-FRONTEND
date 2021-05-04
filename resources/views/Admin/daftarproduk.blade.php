@@ -32,7 +32,7 @@
                                             <td>@currency($produk->harga)</td>
                                             <td><img src="{{url('imgproduk/'.$produk->gambar)}}" width="80px" height="80px" alt=""></td>
                                             <td width="20%"><button type="button" class="btn btn-primary" onclick="window.location.href='/daftarproduk/edit/{{$produk->produk_id}}'"><i
-                                                        class="fas fa-edit"></i>
+                                                        class="fas fa-edit"></i>  
                                                     Edit</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" ><i class="fas fa-trash-alt"></i>
                                                     Hapus</button>
