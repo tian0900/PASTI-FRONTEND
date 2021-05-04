@@ -32,7 +32,7 @@
           <div class="col-md-4">
             <div class="left-content">
               <h4>About our Store</h4>
-              <p>Toko Kami ini menyediakan berbagai jenis kebutuhan medis</p>
+              <p>Toko obat Lasroha ini menyediakan berbagai jenis kebutuhan medis, obat, dan produk kesehatan lainnya</p>
               <ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
