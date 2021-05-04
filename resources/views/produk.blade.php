@@ -2,7 +2,7 @@
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
+      <div class="owl-banner owl-carousel" data-bs-interval="10">
         <div class="banner-item-01">
           <div class="text-content">
             <h4>Best Offer</h4>

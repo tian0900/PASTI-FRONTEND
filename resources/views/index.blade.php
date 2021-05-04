@@ -25,6 +25,8 @@
     </div>
     <!-- Banner Ends Here -->
 
+
+
 <!-- About -->
 <div class="best-features">
       <div class="container">
@@ -63,19 +65,16 @@
 
 <div class="items">
 @foreach($feedback as $feedbacks)
-    <div class="card col-md-12">
+    <div class="card">
         <div class="card-body">
-            <h4 class="card-title"></h4>
-            <div class="template-demo">
-                <p>{{$feedbacks->deskripsi}}</p>
-            </div>
+            <h4 class="card-title"></h4>  
+            <p>{{$feedbacks->deskripsi}}</p>
             <hr>
             <div class="row">
-          
-                <div class="col-sm-10">
+                <div class="col">
                     <div class="profile">
                         <h4 class="cust-name">{{$feedbacks->name}}</h4>
-                        <p class="cust-profession"></p>
+                        <p class="cust-profession">{{$feedbacks->subjek}}</p>
                     </div>
                 </div>
             </div>
