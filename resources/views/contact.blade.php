@@ -45,7 +45,8 @@
       </div>
     </div>
 
-
+    @guest
+    @else
     <div class="send-message">
       <div class="container">
         <div class="row">
@@ -60,12 +61,12 @@
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="" value="{{ Auth::user()->name }}">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="" value="{{ Auth::user()->email }}">
                     </fieldset>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
@@ -90,5 +91,6 @@
         </div>
       </div>
     </div>
+    @endguest
 
     @include('footer')
