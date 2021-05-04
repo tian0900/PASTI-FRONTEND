@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use App\Models\User;
 
-class IsAdmin
+class Role
 {
     /**
      * Handle an incoming request.
@@ -17,7 +17,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-       if(auth()->user()->is_admin){
+       if(auth()->user()->role){
            return $next($request);
        }
        return redirect('/')->with('error', "you don't have access to admin");

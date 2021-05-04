@@ -43,14 +43,20 @@
                 <li>
                     <a class="scroll-link" href="/daftarproduk"><i class="fas fa-pencil-alt"></i>Daftar Produk</a>
                 </li>
-                <li>
-                    <a class="scroll-link" href="/verifikasiakun"><i class="fas fa-user-cog"></i>Verifikasi Akun</a>
-                </li>
+            
                 <li>
                     <a class="scroll-link" href="/daftarpemesanan"><i class="fas fa-shopping-basket"></i>Pemesanan</a>
                 </li>
                 <li>
-                    <a class="scroll-link" href="{{ route('logout') }}" ><i class="fas fa-user"></i>Log Out</a>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-sign-out-alt"></i>{{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                 </li>
 
             </ul>

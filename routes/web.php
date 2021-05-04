@@ -40,16 +40,14 @@ Route::get('/about', function () {
 });
 
 
-Route::get('/verifikasiakun', [VerifikasiController::class, 'index']);
-
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware'=>['auth','is_admin']],function(){
+Route::group(['middleware'=>['auth','role']],function(){
     // Daftar Produk
-        Route::get('/daftarproduk', [DaftarprodukController::class, 'index'])->middleware('is_admin');
+        Route::get('/daftarproduk', [DaftarprodukController::class, 'index'])->middleware('role');
         Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
         Route::post('daftarproduk/store', [DaftarprodukController::class, 'store'])->name('daftarproduk.store');
         Route::get('/daftarproduk/edit/{produk_id}', [DaftarprodukController::class, 'edit']);
