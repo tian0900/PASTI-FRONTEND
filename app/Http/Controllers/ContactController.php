@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Feedback;
+use Auth;
 class ContactController extends Controller
 {
     //
@@ -13,11 +14,12 @@ class ContactController extends Controller
 
     public function store(Request $request){
         $feedback = new Feedback();
-       
+        $feedback->user_id =  Auth::user()->user_id;
+        $feedback->subjek = $request->input('subjek');
         $feedback->deskripsi = $request->input('deskripsi');
         
-        $produks->save();
+        $feedback->save();
         
-        return redirect('daftarmenu');
+        return redirect('/');
     }
 }

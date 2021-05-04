@@ -57,7 +57,8 @@
           </div>
           <div class="col-md-8">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+            <form action="{{route('feedback.store')}}" method="post" enctype="multipart/form-data">
+            {{ csrf_field() }}
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -71,12 +72,12 @@
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="subjek" type="text" class="form-control" id="subject" placeholder="Subject" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      <textarea name="deskripsi" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">

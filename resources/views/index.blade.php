@@ -74,7 +74,7 @@
           
                 <div class="col-sm-10">
                     <div class="profile">
-                        <h4 class="cust-name">{{$feedbacks->nama}}</h4>
+                        <h4 class="cust-name">{{$feedbacks->name}}</h4>
                         <p class="cust-profession"></p>
                     </div>
                 </div>
