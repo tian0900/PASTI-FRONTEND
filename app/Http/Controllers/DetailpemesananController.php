@@ -13,6 +13,7 @@ class DetailpemesananController extends Controller
         $order = DB::table('orderdetail')
         ->join('orders', 'orders.orders_id','=','orderdetail.orders_id')
         ->join('produk', 'produk.produk_id','=','orderdetail.produk_id')
+        ->where('orderdetail.orders_id','=',$orders_id)
         ->get();
         return view('admin.detailpemesanan',compact('order','orderdetail'));
     }

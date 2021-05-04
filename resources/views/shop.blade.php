@@ -30,9 +30,14 @@
                     <label class="col-sm-4 col-form-label">Alamat </label>
                     <label class=" col-form-label text-start">{{$pesans->alamat}}</label>
                 </div>
+                @endforeach
+                @foreach($join as $joins)
+                <form action="{{route('shop.store')}}" method="post" enctype="multipart/form-data">
+                   {{ csrf_field() }}
                 <div class="mb-12 row">
                     <label class="col-sm-4 col-form-label">Total Harga</label>
-                    <label class=" col-form-label text-start"></label>
+                    <label class=" col-form-label text-start">@currency($joins->total)</label>
+                    <input type="hidden" required="required" name="total" class="form-control" value="{{$joins->total}}">
                 </div>
                 @endforeach
   </div>
@@ -45,8 +50,7 @@
     <div class="col-sm-12">
   
 
-    <form action="{{route('shop.store')}}" method="post" enctype="multipart/form-data">
-            {{ csrf_field() }}
+   
            
                 
                 <div class="mb-12 row">

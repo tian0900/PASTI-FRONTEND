@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Orderdetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Auth;
 class ShopController extends Controller
 {
     //
@@ -26,10 +27,11 @@ class ShopController extends Controller
         ->get();
 
          $join = DB::table('checkout')
-        ->join('users', 'users.user_id','=','checkout.user_id')
-        ->select(DB::raw('sum(checkout.total_detail) as total')) 
-        ->groupBy('users.user_id')
+        ->select(DB::raw('SUM(total_detail) as total')) 
+        ->groupBy('user_id')
+        ->where('user_id','=',Auth::user()->user_id)
         ->get();
+
         
         if(count($pesan) == 0){
             return redirect('/');
@@ -54,14 +56,11 @@ class ShopController extends Controller
 
         $checkout = Checkout::where('user_id',auth()->id())->get();
 
-        $temp = 0;
-        foreach($checkout as $checkouts){
-            $temp = $temp + $checkouts->total_detail;
-        }
+       
         $pemesanan= new Orders();
         $pemesanan->user_id = auth()->id() ;
         $pemesanan->admin_id =  1;
-        $pemesanan->total = $temp;
+        $pemesanan->total = $request->total;
         $pemesanan->keterangan = "Verifikasi";
         $file = $pemesanan->bukti_bayar;
 

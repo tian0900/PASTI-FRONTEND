@@ -42,12 +42,22 @@
                                                             </select>
                                                   
                                                 </td>
-                                            <td><img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" width="80px" height="80px" alt=""></td>
+                                            <td><img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" width="80px" height="80px" alt="" data-toggle="modal" data-target="#myModal{{$orders->orders_id}}"></td>
                                             <td><button type="button" class="btn btn-warning" onclick="window.location.href='detailpemesanan/{{$orders->orders_id}}'"><i class="fas fa-info"></i> Detail</button>
                                             <button type="submit" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button>
                                             </form>
                                             </td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$orders->bukti_bayar}}">Popup image</button>
 
+                                              <div id="myModal{{$orders->orders_id}}" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                  <div class="modal-content">
+                                                      <div class="modal-body">
+                                                          <img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" class="img-responsive">
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                     @endforeach
                                     </tr>
                                     </tbody>
@@ -82,5 +92,15 @@
       
     </div>
   </div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Popup image</button>
 
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="//placehold.it/1000x600" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
 @include('admin.footeradmin')
