@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{asset('css')}}/templatemo-sixteen.css">
     <link rel="stylesheet" href="{{asset('css')}}/owl.css">
     <link href="{{asset('image')}}/drugstore.png" rel="icon">
+    
   </head>
 
   <body>

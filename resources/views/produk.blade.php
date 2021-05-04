@@ -25,40 +25,6 @@
     </div>
     <!-- Banner Ends Here -->
 
-<!-- About -->
-<div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2 style="font-size:45px">About SIPALBAB</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <h2 >Looking for the best products?</h2>
-			  <p><strong>Lasroha Pharmacy</strong> provides all the necessities you need. From the need to calm a saturated mind, baby supplies, supplements and vitamins, and medicines</p>
-			  <h3><strong>Why you must choose us?</strong></h3> 
-			  <br>
-              <ul class="featured-list">
-              <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Toko obat Berizin</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Produk Berkualitas</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Pelayanan Terbaik</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Menerima resep Dokter</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Berada di Pusat kota Balige</p><br>
-              </ul>
-              <a href="/about" class="filled-button">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- About Here -->
 
 
 <!--Daftar Produk-->
@@ -68,7 +34,6 @@
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Latest Products</h2>
-              <a href="/produk">view all products <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
           @foreach($produk as $produks)

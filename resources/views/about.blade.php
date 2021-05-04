@@ -128,7 +128,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-              <img width="80px" height="200px" src="{{asset('image')}}/team_04.jpeg">
+              <img width="80px" height="200px" src="{{asset('image')}}/team_04.jpg">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
