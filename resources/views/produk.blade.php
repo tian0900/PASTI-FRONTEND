@@ -45,16 +45,16 @@
                 <h6>@currency($produks->harga)</h6>
                   <a href="pesanan/{{$produks->produk_id}}" class="btn btn-success">Beli</a>
               </div>
-              
+
             </div>
           </div>
           @endforeach
-         
+
         </div>
       </div>
     </div>
 
-  
+
 
 
     <div class="call-to-action">
@@ -68,7 +68,7 @@
                   <p>This Website was created for Apotek LASROHA</p>
                 </div>
                 <div class="col-md-4">
-                  <a href="/loginCustomer" class="filled-button">Purchase Now</a>
+                  <a href="/home" class="filled-button">Purchase Now</a>
                 </div>
               </div>
             </div>

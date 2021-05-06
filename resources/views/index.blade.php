@@ -40,7 +40,7 @@
             <div class="left-content">
               <h2 >Looking for the best products?</h2>
 			  <p><strong>Lasroha Pharmacy</strong> provides all the necessities you need. From the need to calm a saturated mind, baby supplies, supplements and vitamins, and medicines</p>
-			  <h3><strong>Why you must choose us?</strong></h3> 
+			  <h3><strong>Why you must choose us?</strong></h3>
 			  <br>
               <ul class="featured-list">
 			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Toko obat Berizin</p><br>
@@ -67,7 +67,7 @@
 @foreach($feedback as $feedbacks)
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title"></h4>  
+            <h4 class="card-title"></h4>
             <p>{{$feedbacks->deskripsi}}</p>
             <hr>
             <div class="row">
@@ -89,7 +89,7 @@
             </div>
             <hr>
             <div class="row">
-          
+
                 <div class="col-sm-10">
                     <div class="profile">
                         <h4 class="cust-name">Tikoh Amin</h4>
@@ -108,7 +108,7 @@
             </div>
             <hr>
             <div class="row">
-          
+
                 <div class="col-sm-10">
                     <div class="profile">
                         <h4 class="cust-name">Malachi Lensing</h4>
@@ -127,7 +127,7 @@
             </div>
             <hr>
             <div class="row">
-          
+
                 <div class="col-sm-10">
                     <div class="profile">
                         <h4 class="cust-name">Christian Isla</h4>
@@ -146,7 +146,7 @@
             </div>
             <hr>
             <div class="row">
-          
+
                 <div class="col-sm-10">
                     <div class="profile">
                         <h4 class="cust-name">Lori Charles</h4>
@@ -180,16 +180,16 @@
                 <h6>@currency($produks->harga)</h6>
                 <button type="button" class="btn btn-primary col-md-4">Beli</button>
               </div>
-              
+
             </div>
           </div>
           @endforeach
-         
+
         </div>
       </div>
     </div>
 
-  
+
 
 
     <div class="call-to-action">
@@ -203,7 +203,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                 </div>
                 <div class="col-md-4">
-                  <a href="/loginCustomer" class="filled-button">Purchase Now</a>
+                  <a href="/shop/{customer_id}" class="filled-button">Purchase Now</a>
                 </div>
               </div>
             </div>
