@@ -124,7 +124,7 @@
               <div class="row">
                 <div class="col-md-8">
                   <h4>Creative &amp; SIPA<em>LBAB</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                  <p>Lasroha Pharmacy provides all the necessities you need. From the need to calm a saturated mind, baby supplies, supplements and vitamins, and medicines</p>
                 </div>
                 <div class="col-md-4">
                   <a href="/shop/{customer_id}" class="filled-button">Purchase Now</a>
