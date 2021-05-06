@@ -47,13 +47,12 @@
                                             <button type="submit" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button>
                                             </form>
                                             </td>
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$orders->bukti_bayar}}">Popup image</button>
 
                                               <div id="myModal{{$orders->orders_id}}" class="modal fade" tabindex="-1" role="dialog">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                   <div class="modal-content">
                                                       <div class="modal-body">
-                                                          <img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" class="img-responsive">
+                                                          <img src="{{url('buktibayar/'.$orders->bukti_bayar)}}"  class="img-fluid" >
                                                       </div>
                                                   </div>
                                                 </div>
@@ -68,39 +67,7 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn-info" onclick="window.location.href='daftarproduk/tambah'"><i class="fas fa-plus"></i> Tambah Produk</button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h4 class="modal-title">Hapus Data</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Anda ingin menghapusnya?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-danger" onclick="window.location.href=''">Hapus</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Popup image</button>
 
-<div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="//placehold.it/1000x600" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
+
 @include('admin.footeradmin')

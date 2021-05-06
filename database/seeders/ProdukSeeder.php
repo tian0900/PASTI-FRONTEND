@@ -50,6 +50,72 @@ class ProdukSeeder extends Seeder
                 'kategori' => 'Popok',
                 'harga' => 2000,
                 'gambar' => 'masker.jpg'
+            ],
+            [
+                'nama' => 'Arkavit C Kaplet ',
+                'kategori' => 'Tablet',
+                'harga' => 2000,
+                'gambar' => 'arkavitc.jpg'
+            ],
+            [
+                'nama' => 'Betadine Salep 20gr',
+                'kategori' => 'Salep',
+                'harga' => 2000,
+                'gambar' => 'betadine20g.jpg'
+            ],
+            [
+                'nama' => 'Enkasari 120ml',
+                'kategori' => 'Botol',
+                'harga' => 2000,
+                'gambar' => 'enkasari.jfif'
+            ],
+            [
+                'nama' => 'Kejibeling Kapsul',
+                'kategori' => 'Tablet',
+                'harga' => 2000,
+                'gambar' => 'kejibeling.jpg'
+            ],
+            [
+                'nama' => 'Kembang Bulan ',
+                'kategori' => 'Kapsul',
+                'harga' => 2000,
+                'gambar' => 'kembangbulan.jfif'
+            ],
+            [
+                'nama' => 'Listerin Cool Mint 250ml',
+                'kategori' => 'Botol',
+                'harga' => 2000,
+                'gambar' => 'listerincoolmint250ml.jpg'
+            ],
+            [
+                'nama' => 'Listerin Fresh Brush 100ml',
+                'kategori' => 'Botol',
+                'harga' => 2000,
+                'gambar' => 'listerinfreshbrust100ml.jfif'
+            ],
+            [
+                'nama' => 'Zambuk',
+                'kategori' => 'Salep',
+                'harga' => 2000,
+                'gambar' => 'zambuk.png'
+            ],
+            [
+                'nama' => 'Becom C Kapsul',
+                'kategori' => 'Kapsul',
+                'harga' => 2000,
+                'gambar' => 'becomc.jpg'
+            ],
+            [
+                'nama' => 'Curcuma Tablet',
+                'kategori' => 'Tablet',
+                'harga' => 2000,
+                'gambar' => 'curcuma.jpg'
+            ],
+            [
+                'nama' => 'Ever E Box',
+                'kategori' => 'Tablet',
+                'harga' => 2000,
+                'gambar' => 'evere.jfif'
             ]
         ]);
     }
