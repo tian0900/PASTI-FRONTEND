@@ -5,20 +5,20 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h4>Welcome to Las Roha</h4>
+            <h2>SIPALBAB</h2>
           </div>
         </div>
         <div class="banner-item-02">
           <div class="text-content">
-            <h4>Flash Deals</h4>
+            <h4>We serve you the best service</h4>
             <h2>Get your best products</h2>
           </div>
         </div>
         <div class="banner-item-03">
           <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
+            <h4>Offer Your Last Chances</h4>
+            <h2>Grab The Products For Your Health</h2>
           </div>
         </div>
       </div>
@@ -65,8 +65,8 @@
 
 <div class="items">
 @foreach($feedback as $feedbacks)
-    <div class="card">
-        <div class="card-body" style="width: 10000px;">
+    <div class="card" style="width: 10000px;">
+        <div class="card-body" >
             <h4 class="card-title"></h4>
             <p>{{$feedbacks->deskripsi}}</p>
             <hr>
