@@ -102,7 +102,7 @@
               <div class="down-content">
                 <h4>{{$produks->nama}}</h4>
                 <h6>@currency($produks->harga)</h6>
-                <button type="button" class="btn btn-primary col-md-4">Beli</button>
+                <a href="pesanan/{{$produks->produk_id}}"  class="btn btn-primary col-md-4">Beli</a>
               </div>
 
             </div>
