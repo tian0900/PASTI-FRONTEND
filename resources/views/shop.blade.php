@@ -56,7 +56,7 @@
                 <div class="mb-12 row">
                     <label class="col-sm-4 col-form-label">Bukti Pembayaran</label>
                     <div class="col-sm-8">
-                    <input class="form-control" id="formFileMultiple"  name="bukti_bayar" type="file" id="formFileMultiple" multiple value="" >           
+                    <input class="form-control" required="required" id="formFileMultiple"  name="bukti_bayar" type="file" id="formFileMultiple" multiple value="" >           
                     </div>
                     <hr>
                 </div>
