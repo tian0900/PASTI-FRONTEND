@@ -43,9 +43,11 @@
                 <li>
                     <a class="scroll-link" href="/daftarproduk"><i class="fas fa-pencil-alt"></i>Daftar Produk</a>
                 </li>
-            
                 <li>
                     <a class="scroll-link" href="/daftarpemesanan"><i class="fas fa-shopping-basket"></i>Pemesanan</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="/daftarcustomer"><i class="fas fa-user-friends"></i>Daftar Customer</a>
                 </li>
                 <li>
                 <a class="dropdown-item" href="{{ route('logout') }}"

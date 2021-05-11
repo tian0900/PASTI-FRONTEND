@@ -75,11 +75,11 @@
 
                             <div class="col-md-6">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="L">
+                                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Laki-laki">
                                 <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="P">
+                                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Perempuan">
                                 <label class="form-check-label" for="inlineRadio2">Perempuan</label>
                                 </div>
                             </div>

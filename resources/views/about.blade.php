@@ -134,7 +134,7 @@
                     <ul class="social-icons">
                       <li><a href="https://www.facebook.com/nesty.ri"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://web.whatsapp.com/send?phone=6282276636822&text&app_absent=0"><i class="fa fa-whatsapp"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/nesty-tampubolon-1ba396211"><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="https://www.instagram.com/nestygloria03/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>

@@ -11,6 +11,8 @@ use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\DetailpemesananController;
+use App\Http\Controllers\DaftarcustomerController;
+
 
 
 /*
@@ -48,12 +50,14 @@ Route::group(['middleware' => ['auth', 'role']], function () {
     Route::post('daftarproduk/update/{produk_id}', [DaftarprodukController::class, 'update'])->name('daftarproduk.update');
     Route::get('daftarproduk/delete/{produk_id}', [DaftarprodukController::class, 'delete'])->name('daftarproduk.delete');
 
-
-
     Route::get('/daftarpemesanan', [DaftarpemesananController::class, 'index']);
     Route::post('daftapemesanan/update/{orders_id}', [DaftarpemesananController::class, 'update'])->name('daftarpemesanan.update');
 
     Route::get('/detailpemesanan/{orders_id}', [DetailpemesananController::class, 'index']);
+
+    Route::get('/daftarcustomer', [DaftarcustomerController::class, 'index']);
+    Route::get('/detailcustomer/{user_id}', [DaftarcustomerController::class, 'detail']);
+
 });
 
 Route::group(['middleware' => ['auth']], function () {
@@ -66,3 +70,4 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('shop/store', [ShopController::class, 'store'])->name('shop.store');
     Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'delete']);
 });
+
