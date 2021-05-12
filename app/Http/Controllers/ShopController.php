@@ -20,6 +20,7 @@ class ShopController extends Controller
         ->where('users.user_id','=',auth()->id())
         ->get();
 
+        
         $bio =  Checkout::inRandomOrder()->limit(1)
         ->select('users.name as namauser','users.*','checkout.*')
         ->join('users', 'checkout.user_id','=','users.user_id')

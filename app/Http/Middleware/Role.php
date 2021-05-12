@@ -17,7 +17,7 @@ class Role
      */
     public function handle(Request $request, Closure $next)
     {
-       if(auth()->user()->role){
+       if(auth()->user()->role == 1){
            return $next($request);
        }
        return redirect('/')->with('error', "you don't have access to admin");
