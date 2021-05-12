@@ -29,7 +29,7 @@ use App\Http\Controllers\DaftarcustomerController;
 Route::get('/', [SipalbabController::class, 'index']);
 Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
-Route::post('feedback/store', [ContactController::class, 'store'])->name('feedback.store');
+
 
 Route::get('/about', function () {
     return view('about');
@@ -69,5 +69,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/shop/{customer_id}', [ShopController::class, 'index']);
     Route::post('shop/store', [ShopController::class, 'store'])->name('shop.store');
     Route::get('/shop/delete/{checkout_id}', [ShopController::class, 'delete']);
+    Route::post('feedback/store', [ContactController::class, 'store'])->name('feedback.store');
 });
 

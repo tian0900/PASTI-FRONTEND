@@ -34,10 +34,10 @@
               <h4>About our Store</h4>
               <p>Toko obat Lasroha ini menyediakan berbagai jenis kebutuhan medis, obat, dan produk kesehatan lainnya</p>
               <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/onra.imanuel"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/onra-sihombing-037545208/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/onra_imanuel/"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
