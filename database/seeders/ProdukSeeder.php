@@ -109,103 +109,103 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Biocream 20gr',
                 'kategori' => 'Salep',
                 'harga' => 30000,
-                'gambar' => ''
+                'gambar' => 'biocream20gr.jpg'
             ],
             [
                 'nama' => 'Antangin Cair',
                 'kategori' => 'Sachet',
                 'harga' => 29000,
-                'gambar' => ''
+                'gambar' => 'antangincair.jpg'
             ],
             [
                 'nama' => 'Curcuma Syrup 60ml',
                 'kategori' => 'Botol',
                 'harga' => 6000,
-                'gambar' => ''
+                'gambar' => 'curcumasirup.jpg'
             ],
             [
                 'nama' => 'Minyak Dewi Tunjong 40ml',
                 'kategori' => 'Minyak Angin',
                 'harga' => 35000,
-                'gambar' => ''
+                'gambar' => 'dewitunjong.jpg'
             ],
             [
                 'nama' => 'Freshcare Green Tea 10ml',
                 'kategori' => 'Minyak Angin',
                 'harga' => 12000,
-                'gambar' => ''
+                'gambar' => 'freshcaregreentea.jpg'
             ],
             [
                 'nama' => 'Freshcare Strong 10ml',
                 'kategori' => 'Minyak Angin',
                 'harga' => 12000,
-                'gambar' => ''
+                'gambar' => 'freshcarestrong.jpg'
             ],
             [
                 'nama' => 'H-Booster Sirup 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 17000,
-                'gambar' => ''
+                'gambar' => 'h-booster60ml.jpg'
             ],
             [
                 'nama' => 'Herocyn Baby 100gr',
                 'kategori' => 'Bedak',
                 'harga' => 10000,
-                'gambar' => ''
+                'gambar' => 'herocynbaby.jpg'
             ],
             [
                 'nama' => 'Herocyn Baby 200gr',
                 'kategori' => 'Bedak',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'herocynbaby200gr.jpg'
             ],
             [
                 'nama' => 'Imboost Force Kapsul',
                 'kategori' => 'Box',
                 'harga' => 275000,
-                'gambar' => ''
+                'gambar' => 'imboostforcekapsul.jpg'
             ],
             [
                 'nama' => 'Imboost Force Kid Sirup 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 67000,
-                'gambar' => ''
+                'gambar' => 'imboostforcekidsirup.jpg'
             ],
             [
                 'nama' => 'Komix Jahe',
                 'kategori' => 'Sirup',
                 'harga' => 40000,
-                'gambar' => ''
+                'gambar' => 'komixjahe.jpg'
             ],
             [
                 'nama' => 'Komix Jeruk Nipis',
                 'kategori' => 'Sirup',
                 'harga' => 40000,
-                'gambar' => ''
+                'gambar' => 'komixjeruknipis.jpg'
             ],
             [
                 'nama' => 'Lactacyd Baby 60ml',
                 'kategori' => 'Botol',
                 'harga' => 27000,
-                'gambar' => ''
+                'gambar' => 'lactacydbaby.jpg'
             ],
             [
                 'nama' => 'Medicated Oil 12ml',
                 'kategori' => 'Minyak Angin',
                 'harga' => 17000,
-                'gambar' => ''
+                'gambar' => 'medicatedoil.jpg'
             ],
             [
                 'nama' => 'Medicated Oil 20ml',
                 'kategori' => 'Minyak Angin',
                 'harga' => 24000,
-                'gambar' => ''
+                'gambar' => 'medicatedoil20ml.jpg'
             ],
             [
                 'nama' => 'Pharmaton Formula',
                 'kategori' => 'Box',
                 'harga' => 240000,
-                'gambar' => ''
+                'gambar' => 'pharmatonformula.jpg'
             ],
             [
                 'nama' => 'Po Cai Cui',
@@ -223,7 +223,7 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Scoots Orange 400ml',
                 'kategori' => 'Sirup',
                 'harga' => 55000,
-                'gambar' => ''
+                'gambar' => 'scootsorange200ml.jpg'
             ],
             [
                 'nama' => 'Welmove Tablet',

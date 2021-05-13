@@ -67,9 +67,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact Us</a>
               </li>
+              @guest
               <li class="nav-item">
-                <a class="nav-link" href="/shop/1"><i class="fas fa-shopping-cart"></i> Shop</a>
+                <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> Shop</a>
               </li>
+           @else
+           <li class="nav-item">
+                <a class="nav-link" href="/shop/{{ Auth::user()->user_id}}"><i class="fas fa-shopping-cart"></i> Shop</a>
+              </li>
+          @endguest
                  <!-- Authentication Links -->
                  @guest
                             @if (Route::has('login'))
