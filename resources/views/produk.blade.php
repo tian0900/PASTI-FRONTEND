@@ -25,8 +25,6 @@
     </div>
     <!-- Banner Ends Here -->
 
-z
-
 <!--Daftar Produk-->
 <div class="latest-products">
       <div class="container">
@@ -34,7 +32,7 @@ z
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Latest Products</h2>
-            </div>
+            </div>           
           </div>
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
@@ -48,15 +46,23 @@ z
 
             </div>
           </div>
-          @endforeach
-
+          @endforeach 
         </div>
       </div>
     </div>
-
-
-
-
+        <div class="container">
+          <div>{{$produk->links()}}</div>
+          <div class="text-right">
+             <p> Showing
+             {{$produk->firstItem()}}
+             to
+             {{$produk->lastItem()}}
+             from
+             {{$produk->total()}}
+             products
+             </p>
+          </div>
+        </div>
     <div class="call-to-action">
       <div class="container">
         <div class="row">
