@@ -301,19 +301,19 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Baby Cough 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 6000,
-                'gambar' => ''
+                'gambar' => 'BabyCough.jpg'
             ],
             [
                 'nama' => 'Insto Reguler',
                 'kategori' => 'Pack',
                 'harga' => 179000,
-                'gambar' => ''
+                'gambar' => 'instoReguler.jfif'
             ],
             [
                 'nama' => 'Paramex',
                 'kategori' => 'Box',
                 'harga' => 105000,
-                'gambar' => ''
+                'gambar' => 'Paramex.jpg'
             ],
             [
                 'nama' => 'Acyclovir Krim 5gr',
