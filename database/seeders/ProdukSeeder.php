@@ -451,49 +451,43 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Neurobion Forte 5000mg',
                 'kategori' => 'Box',
                 'harga' => 895000,
-                'gambar' => ''
+                'gambar' => 'Neurobion Forte 5000mg.jfif'
             ],
             [
                 'nama' => 'Diaform Box',
                 'kategori' => 'Box',
                 'harga' => 138000,
-                'gambar' => ''
+                'gambar' => 'Diaform Box.jfif'
             ],
             [
                 'nama' => 'Durol Syrup',
                 'kategori' => 'Sirup',
                 'harga' => 26000,
-                'gambar' => ''
-            ],
-            [
-                'nama' => 'Hufagesic Tablet',
-                'kategori' => 'Box',
-                'harga' => 25000,
-                'gambar' => ''
+                'gambar' => 'Durol Syrup.jfif'
             ],
             [
                 'nama' => 'Lanamol',
                 'kategori' => 'Box',
                 'harga' => 31000,
-                'gambar' => ''
+                'gambar' => 'Lanamol.jfif'
             ],
             [
                 'nama' => 'Novagesic 500mg',
                 'kategori' => 'Box',
                 'harga' => 21000,
-                'gambar' => ''
+                'gambar' => 'Novagesic 500mg.jpg'
             ],
             [
                 'nama' => 'OBH Combi Berdahak 100ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Berdahak 100ml.jpg'
             ],
             [
                 'nama' => 'Obimin',
                 'kategori' => 'Botol',
                 'harga' => 58000,
-                'gambar' => ''
+                'gambar' => 'Obimin.jfif'
             ],
             [
                 'nama' => 'Pacetik',
