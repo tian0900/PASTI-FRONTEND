@@ -295,7 +295,7 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Sangobion Capsul',
                 'kategori' => 'Box',
                 'harga' => 369000,
-                'gambar' => ''
+                'gambar' => 'sangobion.jpg'
             ],
             [
                 'nama' => 'Baby Cough 60ml',
