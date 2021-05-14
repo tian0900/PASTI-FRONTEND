@@ -229,7 +229,7 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Welmove Tablet',
                 'kategori' => 'Box',
                 'harga' => 205000,
-                'gambar' => ''
+                'gambar' => 'welvometablet.jpeg'
             ],
             [
                 'nama' => 'Antasida Syrup 60ml',
