@@ -598,22 +598,22 @@ class ProdukSeeder extends Seeder
                 'gambar' => 'Paramex Flu & Batuk.webp'
             ],
             [
-                'nama' => 'Siladex Biru 100ml',
-                'kategori' => 'Sirup',
-                'harga' => 16000,
-                'gambar' => ''
-            ],
-            [
                 'nama' => 'Siladex Biru 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'Siladex Biru 100ml.jfif'
+            ],
+            [
+                'nama' => 'Siladex Biru 100ml',
+                'kategori' => 'Sirup',
+                'harga' => 16000,
+                'gambar' => 'Siladex Biru 60ml.webp'
             ],
             [
                 'nama' => 'Termorex Plus 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'Termorex Plus 60ml.jpg'
             ]
         ]);
     }
