@@ -520,52 +520,52 @@ class ProdukSeeder extends Seeder
                 'gambar' => 'Rohto.jpg'
             ],
             [
-                'nama' => 'Siladex Hijau 100ml',
-                'kategori' => 'Botol',
-                'harga' => 16000,
-                'gambar' => 'Siladex Hijau 100ml.jfif'
-            ],
-            [
                 'nama' => 'Siladex Hijau 60ml',
                 'kategori' => 'Botol',
                 'harga' => 12000,
-                'gambar' => ''
+                'gambar' => 'Siladex Hijau 100ml.jfif'
+            ],
+            [
+                'nama' => 'Siladex Hijau 100ml',
+                'kategori' => 'Botol',
+                'harga' => 16000,
+                'gambar' => 'Siladex Hijau 60ml.webp'
             ],
             [
                 'nama' => 'Siladex Merah 100ml',
                 'kategori' => 'Botol',
                 'harga' => 16000,
-                'gambar' => ''
+                'gambar' => 'Siladex Merah 100ml.jpg'
             ],
             [
                 'nama' => 'Ultraflu',
                 'kategori' => 'Box',
                 'harga' => 67000,
-                'gambar' => ''
+                'gambar' => 'Ultraflu.jpg'
             ],
             [
                 'nama' => 'Bodrex',
                 'kategori' => 'Box',
                 'harga' => 41000,
-                'gambar' => ''
+                'gambar' => 'Bodrex.jpg'
             ],
             [
                 'nama' => 'Procold',
                 'kategori' => 'Box',
                 'harga' => 70000,
-                'gambar' => ''
+                'gambar' => 'Procold.jpg'
             ],
             [
                 'nama' => 'Anakonidin 30ml',
                 'kategori' => 'Botol',
                 'harga' => 7000,
-                'gambar' => ''
+                'gambar' => 'Anakonidin 30ml.jpg'
             ],
             [
                 'nama' => 'Decolgen',
                 'kategori' => 'Box',
                 'harga' => 43000,
-                'gambar' => ''
+                'gambar' => 'Decolgen.webp'
             ],
             [
                 'nama' => 'Inza',
