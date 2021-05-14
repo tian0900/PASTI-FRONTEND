@@ -259,37 +259,37 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Entrostop Tablet',
                 'kategori' => 'Pack',
                 'harga' => 79000,
-                'gambar' => ''
+                'gambar' => 'EntrostopTablet.jfif'
             ],
             [
                 'nama' => 'Hufabion Tablet',
                 'kategori' => 'Box',
                 'harga' => 30000,
-                'gambar' => ''
+                'gambar' => 'HufabionTablet.png'
             ],
             [
                 'nama' => 'Hufagesic Tablet',
                 'kategori' => 'Box',
                 'harga' => 24000,
-                'gambar' => ''
+                'gambar' => 'HufagesicTablet.jfif'
             ],
             [
                 'nama' => 'Neurobion Tablet',
                 'kategori' => 'Box',
                 'harga' => 487000,
-                'gambar' => ''
+                'gambar' => 'neurobionTab.jpg'
             ],
             [
                 'nama' => 'Panadol Tablet',
                 'kategori' => 'Box',
                 'harga' => 93000,
-                'gambar' => ''
+                'gambar' => 'PanadolTab.png'
             ],
             [
                 'nama' => 'Promag Tablet',
                 'kategori' => 'Box',
                 'harga' => 81000,
-                'gambar' => ''
+                'gambar' => 'PromagTab.jfif'
             ],
             [
                 'nama' => 'Sangobion Capsul',
