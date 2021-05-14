@@ -6,8 +6,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>contact us</h4>
-              <h2>let’s get in touch</h2>
+              <h2 class="text-primary">contact us</h2>
             </div>
           </div>
         </div>

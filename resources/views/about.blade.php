@@ -154,7 +154,7 @@
               <div class="thumb-container">
               <img width="100px" height="200px" src="{{asset('image')}}/team_05.jpeg">
                 <div class="hover-effect">
-                  <div class="hover-content">s
+                  <div class="hover-content">
                     <ul class="social-icons">
                       <li><a href="https://www.facebook.com/onra.imanuel"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
