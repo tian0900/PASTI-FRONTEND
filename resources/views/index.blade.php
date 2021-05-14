@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2 style="font-size:45px">About SIPALBAB</h2>
+              <h2 style="font-size:45px" >About SIPALBAB</h2>
             </div>
           </div>
           <div class="col-md-6">
@@ -43,11 +43,11 @@
 			  <h3><strong>Why you must choose us?</strong></h3>
 			  <br>
               <ul class="featured-list">
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Toko obat Berizin</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Produk Berkualitas</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Pelayanan Terbaik</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Menerima resep Dokter</p><br>
-			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Berada di Pusat kota Balige</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Have a valid permit</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Have a quality product</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Best service</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Receive a Doctor's prescription</p><br>
+			 <p class="fa fa-check" aria-hidden="true"></i>&nbsp;Located in downtown Balige</p><br>
               </ul>
               <a href="/about" class="filled-button">Read More</a>
             </div>
