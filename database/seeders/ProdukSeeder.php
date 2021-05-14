@@ -247,13 +247,13 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Combantrin Tablet 125mg',
                 'kategori' => 'Box',
                 'harga' => 379000,
-                'gambar' => ''
+                'gambar' => 'combantrin125.jfif'
             ],
             [
                 'nama' => 'Combantrin Tablet 250mg',
                 'kategori' => 'Box',
                 'harga' => 379000,
-                'gambar' => ''
+                'gambar' => 'combantrin250.jfif'
             ],
             [
                 'nama' => 'Entrostop Tablet',
