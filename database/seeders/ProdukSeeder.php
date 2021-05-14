@@ -337,19 +337,19 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Bioplacenton 15gr',
                 'kategori' => 'Tube',
                 'harga' => 39000,
-                'gambar' => ''
+                'gambar' => 'Bioplacenton 15gr.jpg'
             ],
             [
                 'nama' => 'Gentalex Cream 5gr',
                 'kategori' => 'Tube',
                 'harga' => 7000,
-                'gambar' => ''
+                'gambar' => 'Gentalex Cream 5gr.jpg'
             ],
             [
                 'nama' => 'OBH Combi Anak Madu 60ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Anak Madu 60ml.jpeg'
             ],
             [
                 'nama' => 'OBH Combi Anak Strawberry 60ml',
