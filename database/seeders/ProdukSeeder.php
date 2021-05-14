@@ -571,43 +571,31 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Inza',
                 'kategori' => 'Box',
                 'harga' => 51000,
-                'gambar' => ''
+                'gambar' => 'Inza.jfif'
             ],
             [
                 'nama' => 'OBH Combi Anak Apel 60ml',
                 'kategori' => 'Box',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Anak Apel 60ml.jpg'
             ],
             [
                 'nama' => 'OBH Combi Anak Jeruk 60ml',
                 'kategori' => 'Box',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Anak Jeruk 60ml.jpg'
             ],
             [
                 'nama' => 'Panadol Flu & Batuk',
                 'kategori' => 'Box',
                 'harga' => 123000,
-                'gambar' => ''
+                'gambar' => 'Panadol Flu & Batuk.jpg'
             ],
             [
                 'nama' => 'Paramex Flu & Batuk',
                 'kategori' => 'Box',
                 'harga' => 45000,
-                'gambar' => ''
-            ],
-            [
-                'nama' => 'Pimtrakol Cherry 60ml',
-                'kategori' => 'Sirup',
-                'harga' => 12000,
-                'gambar' => ''
-            ],
-            [
-                'nama' => 'Pimtrakol Lemon 60ml',
-                'kategori' => 'Sirup',
-                'harga' => 12000,
-                'gambar' => ''
+                'gambar' => 'Paramex Flu & Batuk.webp'
             ],
             [
                 'nama' => 'Siladex Biru 100ml',
