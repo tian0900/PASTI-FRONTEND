@@ -1,4 +1,14 @@
 @include('navbar')
+<style>
+  
+.form-control {
+  float: right;
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+</style>
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="banner header-text">
@@ -29,10 +39,20 @@
 <div class="latest-products">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Latest Products</h2>
-            </div>           
+          <div class="col-md-12 section-heading">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="">
+                  <h2>Latest Products</h2>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <form class="d-flex" method="GET" action="/produk">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="cari" >
+                  <button class="btn btn-success"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+            </div>     
           </div>
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
@@ -51,17 +71,7 @@
       </div>
     </div>
         <div class="container">
-          <div>{{$produk->links()}}</div>
-          <div class="text-right">
-             <p> Showing
-             {{$produk->firstItem()}}
-             to
-             {{$produk->lastItem()}}
-             from
-             {{$produk->total()}}
-             products
-             </p>
-          </div>
+         
         </div>
     <div class="call-to-action">
       <div class="container">
