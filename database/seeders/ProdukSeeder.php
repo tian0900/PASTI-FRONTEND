@@ -433,19 +433,19 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Vermint',
                 'kategori' => 'Botol',
                 'harga' => 38000,
-                'gambar' => ''
+                'gambar' => 'Vermint.jpg'
             ],
             [
                 'nama' => 'Vitacimin Lemon',
                 'kategori' => 'Box',
                 'harga' => 85000,
-                'gambar' => ''
+                'gambar' => 'Vitacimin Lemon.jpg'
             ],
             [
                 'nama' => 'Xon-Ce',
                 'kategori' => 'Box',
                 'harga' => 77000,
-                'gambar' => ''
+                'gambar' => 'Xon-Ce.jfif'
             ],
             [
                 'nama' => 'Neurobion Forte 5000mg',
