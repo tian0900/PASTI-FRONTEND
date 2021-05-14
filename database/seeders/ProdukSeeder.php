@@ -493,37 +493,37 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Pacetik',
                 'kategori' => 'Botol',
                 'harga' => 19000,
-                'gambar' => ''
+                'gambar' => 'Pacetik.jpg'
             ],
             [
                 'nama' => 'Microlax Gel 5mg',
                 'kategori' => 'Tube',
                 'harga' => 23000,
-                'gambar' => ''
+                'gambar' => 'Microlax Gel 5mg.jfif'
             ],
             [
                 'nama' => 'Salap 88',
                 'kategori' => 'Tube',
                 'harga' => 10000,
-                'gambar' => ''
+                'gambar' => 'Salap 88.jpg'
             ],
             [
                 'nama' => 'Vitamin C IPI',
                 'kategori' => 'Botol',
                 'harga' => 5000,
-                'gambar' => ''
+                'gambar' => 'Vitamin C IPI.jfif'
             ],
             [
                 'nama' => 'Rohto',
                 'kategori' => 'Botol',
                 'harga' => 10000,
-                'gambar' => ''
+                'gambar' => 'Rohto.jpg'
             ],
             [
                 'nama' => 'Siladex Hijau 100ml',
                 'kategori' => 'Botol',
                 'harga' => 16000,
-                'gambar' => ''
+                'gambar' => 'Siladex Hijau 100ml.jfif'
             ],
             [
                 'nama' => 'Siladex Hijau 60ml',
