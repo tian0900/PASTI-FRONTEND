@@ -319,19 +319,19 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Acyclovir Krim 5gr',
                 'kategori' => 'Box',
                 'harga' => 100000,
-                'gambar' => ''
+                'gambar' => 'AcyclovirKrim5gr.png'
             ],
             [
                 'nama' => 'Amlodipine 5gr',
                 'kategori' => 'Box',
                 'harga' => 15000,
-                'gambar' => ''
+                'gambar' => 'Amlodipine 5gr.jpg'
             ],
             [
                 'nama' => 'Bevalex Cream 5gr',
                 'kategori' => 'Tube',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'bevalex.jfif'
             ],
             [
                 'nama' => 'Bioplacenton 15gr',
