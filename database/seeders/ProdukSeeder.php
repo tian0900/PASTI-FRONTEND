@@ -352,7 +352,7 @@ class ProdukSeeder extends Seeder
                 'gambar' => 'OBH Combi Anak Madu 60ml.jpeg'
             ],
             [
-                'nama' => 'OBH Combi Anak Strawberry 60ml',
+                'nama' => 'OBH Combi Anak Strawberry',
                 'kategori' => 'Botol',
                 'harga' => 13000,
                 'gambar' => 'OBH Combi Anak Strawberry 60ml.jpg'
@@ -373,25 +373,25 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Pimtrakol Cherry 60ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'Pimtrakol Cherry 60ml.jpg'
             ],
             [
                 'nama' => 'Pimtrakol Lemon 60ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'Pimtrakol Lemon 60ml.jfif'
             ],
             [
                 'nama' => 'Tera F Kaplet',
                 'kategori' => 'Box',
                 'harga' => 45000,
-                'gambar' => ''
+                'gambar' => 'Tera F Kaplet.jpg'
             ],
             [
-                'nama' => 'Becom C Capsul',
+                'nama' => 'Becom C Kapsul',
                 'kategori' => 'Box',
                 'harga' => 186000,
-                'gambar' => ''
+                'gambar' => 'Becom C Capsul.jpg'
             ],
             [
                 'nama' => 'Lactacyd Baby 150ml',
