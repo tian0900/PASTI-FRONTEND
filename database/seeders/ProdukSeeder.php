@@ -208,19 +208,19 @@ class ProdukSeeder extends Seeder
                 'gambar' => 'pharmatonformula.jpg'
             ],
             [
-                'nama' => 'Po Cai Cui',
-                'kategori' => 'Minyak Angin',
+                'nama' => 'Po Chai Shui',
+                'kategori' => 'Botol',
                 'harga' => 45000,
-                'gambar' => ''
+                'gambar' => 'Po Cai.jfif'
             ],
             [
-                'nama' => 'Scoots Orange 200ml',
+                'nama' => 'Scotts Orange 200ml',
                 'kategori' => 'Sirup',
                 'harga' => 34000,
-                'gambar' => ''
+                'gambar' => 'Scoots200ml.jfif'
             ],
             [
-                'nama' => 'Scoots Orange 400ml',
+                'nama' => 'Scotts Orange 400ml',
                 'kategori' => 'Sirup',
                 'harga' => 55000,
                 'gambar' => 'scootsorange200ml.jpg'
@@ -229,31 +229,35 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Welmove Tablet',
                 'kategori' => 'Box',
                 'harga' => 205000,
+<<<<<<< HEAD
                 'gambar' => 'welvometablet.jpeg'
+=======
+                'gambar' => 'welmove.jfif'
+>>>>>>> 6771ab34708b45ebf88191e3892b4698a23e2b92
             ],
             [
                 'nama' => 'Antasida Syrup 60ml',
                 'kategori' => 'Sirup',
                 'harga' => 7000,
-                'gambar' => ''
+                'gambar' => 'Antasida60ml.jfif'
             ],
             [
                 'nama' => 'Antasida Tablet',
                 'kategori' => 'Box',
                 'harga' => 12000,
-                'gambar' => ''
+                'gambar' => 'AntasidaTablet.jpg'
             ],
             [
                 'nama' => 'Combantrin Tablet 125mg',
                 'kategori' => 'Box',
                 'harga' => 379000,
-                'gambar' => ''
+                'gambar' => 'combantrin125.jfif'
             ],
             [
                 'nama' => 'Combantrin Tablet 250mg',
                 'kategori' => 'Box',
                 'harga' => 379000,
-                'gambar' => ''
+                'gambar' => 'combantrin250.jfif'
             ],
             [
                 'nama' => 'Entrostop Tablet',
