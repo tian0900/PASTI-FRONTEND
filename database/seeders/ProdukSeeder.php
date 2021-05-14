@@ -355,19 +355,19 @@ class ProdukSeeder extends Seeder
                 'nama' => 'OBH Combi Anak Strawberry 60ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Anak Strawberry 60ml.jpg'
             ],
             [
                 'nama' => 'OBH Combi Plus 100ml',
                 'kategori' => 'Botol',
                 'harga' => 17000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Plus 100ml.jpg'
             ],
             [
                 'nama' => 'OBH Combi Plus 60ml',
                 'kategori' => 'Botol',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'OBH Combi Plus 60ml.jfif'
             ],
             [
                 'nama' => 'Pimtrakol Cherry 60ml',
