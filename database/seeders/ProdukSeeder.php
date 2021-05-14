@@ -397,37 +397,37 @@ class ProdukSeeder extends Seeder
                 'nama' => 'Lactacyd Baby 150ml',
                 'kategori' => 'Botol',
                 'harga' => 67000,
-                'gambar' => ''
+                'gambar' => 'Lactacyd Baby 150ml.jfif'
             ],
             [
                 'nama' => 'Lactacyd Baby 250ml',
                 'kategori' => 'Botol',
                 'harga' => 102000,
-                'gambar' => ''
+                'gambar' => 'Lactacyd Baby 250ml.jfif'
             ],
             [
-                'nama' => 'Lactacyd Baby 250ml',
+                'nama' => 'Lactacyd Baby 60ml',
                 'kategori' => 'Botol',
-                'harga' => 102000,
-                'gambar' => ''
+                'harga' => 40000,
+                'gambar' => 'Lactacyd Baby 60ml.jfif'
             ],
             [
                 'nama' => 'Herocyn 150gr',
                 'kategori' => 'Bedak',
                 'harga' => 17000,
-                'gambar' => ''
+                'gambar' => 'Herocyn 150gr.jfif'
             ],
             [
                 'nama' => 'Herocyn 85gr',
                 'kategori' => 'Bedak',
                 'harga' => 13000,
-                'gambar' => ''
+                'gambar' => 'Herocyn 85gr.webp'
             ],
             [
                 'nama' => 'Pagoda Pastiles Mint 20gr',
                 'kategori' => 'Box',
                 'harga' => 65000,
-                'gambar' => ''
+                'gambar' => 'Pagoda Pastiles Mint 20gr.jfif'
             ],
             [
                 'nama' => 'Vermint',
