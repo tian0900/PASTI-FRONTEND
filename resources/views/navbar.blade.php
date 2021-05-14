@@ -22,11 +22,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="{{asset('aos')}}/aos.js"></script>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{{asset('css')}}/fontawesome.css">
     <link rel="stylesheet" href="{{asset('css')}}/templatemo-sixteen.css">
     <link rel="stylesheet" href="{{asset('css')}}/owl.css">
+    <link rel="stylesheet" href="{{asset('aos')}}/aos.css">
     <link href="{{asset('image')}}/drugstore.png" rel="icon">
     
   </head>

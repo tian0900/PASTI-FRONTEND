@@ -75,6 +75,11 @@ slidesToScroll: 1
     <script src="{{asset('js')}}/isotope.js"></script>
     <script src="{{asset('js')}}/accordions.js"></script>
     <script src="{{asset('bootstrap')}}/js/bootstrap.min.js"></script>
+    <script src="{{asset('js')}}/min/plugins.min.js"></script>
+    <script src="{{asset('js')}}/min/medigo-custom.min.js"></script>
+    <script>
+      AOS.init();
+      </script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

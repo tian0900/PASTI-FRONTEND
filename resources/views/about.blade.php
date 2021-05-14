@@ -4,14 +4,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h4>about us</h4>
-              <h2 style="color:red;">SOPANAGAMAN</h2>
+              <h4 data-aos="fade-down" data-aos-duration="3000">about us</h4>
+              <br>
+              <h2 style="color:rgb(255, 0, 0,0.5);" data-aos="fade-up" data-aos-duration="3000">SOPANAGAMAN</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
-
 
     <div class="best-features about-features">
       <div class="container">
@@ -176,8 +176,5 @@
         </div>
       </div>
     </div>
-
-
-   
 
     @include('footer')
