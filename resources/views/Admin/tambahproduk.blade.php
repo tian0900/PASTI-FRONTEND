@@ -20,8 +20,20 @@
                     <div class="col-sm-9">
                         <select class="form-control"  required="required" name="kategori" aria-label="Default select example" >
                             <option value="Sirup">Sirup</option>
-                            <option value="Popok Bayi">Popok Bayi</option>
+                            <option value="Popok Dewasa">Popok Dewasa</option>
                             <option value="Tablet">Tablet</option>
+                            <option value="Minyak Herbal">Minyak Herbal</option>
+                            <option value="Kontrasepsi">Alat Kontrasepsi</option>
+                            <option value="bayi">Perlengkapan Bayi</option>
+                            <option value="Popok Bayi">Popok Bayi</option>
+                            <option value="Box">Box</option>
+                            <option value="Kapsul">Kapsul</option>
+                            <option value="Salep">Salep</option>
+                            <option value="Sachet">Sachet</option>
+                            <option value="Bedak">Bedak</option>
+                            <option value="Tube">Tube</option>
+                            <option value="Botol">Botol</option>
+                            <option value="Minyak Angin">Minyak Angin</option>
                         </select>
                     </div>
                 </div>
