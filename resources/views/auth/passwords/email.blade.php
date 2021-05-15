@@ -1,6 +1,5 @@
-@extends('layouts.app')
-
-@section('content')
+@include('navbar')
+<div class="page-heading contact-heading header-text">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -44,4 +43,5 @@
         </div>
     </div>
 </div>
-@endsection
+</div>
+@include('footer')
