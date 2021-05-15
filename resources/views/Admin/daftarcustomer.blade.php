@@ -25,7 +25,7 @@
                                     <tbody>
                                @foreach($user as $users)
                                     <tr>
-                                            <td>{{$users -> user_id}</td>
+                                            <td>{{$users -> user_id}}</td>
                                             <td>{{$users -> name}}</td>
                                             <td>{{$users -> alamat}}</td>
                                             <td>{{$users -> no_telepon}}</td>
