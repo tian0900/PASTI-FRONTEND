@@ -48,10 +48,7 @@
   <div class="card-body">
   <div class="row">
     <div class="col-sm-12">
-  
 
-   
-           
              
                 <div class="mb-12 row">
                     <label class="col-sm-4 col-form-label">Bukti Pembayaran</label>

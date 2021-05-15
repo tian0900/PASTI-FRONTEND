@@ -1090,7 +1090,7 @@ footer .inner-content p a {
 .card {
 	position: relative;
 	display: flex;
-	width: 900px;
+	width: 800px;
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;

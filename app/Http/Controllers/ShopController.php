@@ -45,10 +45,11 @@ class ShopController extends Controller
     }
 
     public function delete($user_id){
-        $delete = Checkout::find($user_id);
-        if( $delete->delete()){
-           return redirect()->back();
-        }
+    
+        $delete = Checkout::where('user_id',auth()->id());
+            if( $delete->delete()){
+                return redirect('/');
+            }
   
     }
 

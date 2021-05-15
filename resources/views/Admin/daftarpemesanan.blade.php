@@ -26,7 +26,7 @@
                                     <tbody>
                                     @foreach($order as $orders)
                                     <tr>
-                                            <td></td>
+                                            <td>{{$orders->orders_id}}</td>
                                             <td>{{$orders->name}}</td>
                                             <td>@currency($orders->total)</td>
                                             <td><form action="{{route('daftarpemesanan.update',$orders->orders_id)}}" method="post" enctype="multipart/form-data">

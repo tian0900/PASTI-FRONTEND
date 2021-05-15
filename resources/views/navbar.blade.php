@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{asset('aos')}}/aos.css">
     <link href="{{asset('image')}}/drugstore.png" rel="icon">
     
+    
   </head>
 
   <body>

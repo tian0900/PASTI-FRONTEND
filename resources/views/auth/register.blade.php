@@ -90,7 +90,6 @@
 
                             <div class="col-md-6">
                             <textarea class="form-control" placeholder="Leave a comment here" id="alamat" style="height: 100px" name="alamat" autocomplete="new-alamat"></textarea>
-                             <label for="alamat">Comments</label>
                             </div>
                         </div>
 

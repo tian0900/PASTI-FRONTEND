@@ -39,8 +39,7 @@
                     </div>
                 </div>
 
-				<button type="button" class="btn btn-danger" onclick="window.location.href='/detailcustomer/{{$user->user_id}}'"><i class="fas fa-times"></i> Batal</button>
-				<button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Edit</button>
+                <button type="button"  class="btn btn-primary"  onclick="window.location.href='/daftarcustomer'">Kembali</button>
             </form>
 
 
