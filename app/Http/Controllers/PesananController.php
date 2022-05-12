@@ -16,7 +16,7 @@ class PesananController extends Controller
         // $produks = Produk::find($produk_id);
         // return view('pesanan',compact('produks'));
         $produk = Http::get("http://localhost:8080/api/produks/$produk_id");
-        return view('pesanan',['produk' =>json_decode($produk)]);;
+        return view('pesanan',['produk' =>json_decode($produk)]);
     }
 
     public function store(Request $request){

@@ -11,8 +11,8 @@ class DaftarprodukController extends Controller
     //
     public function index()
     {
-        $produks = Produk::all();
-        return view('admin.daftarproduk', compact('produks'));
+        $produks = Http::get("http://localhost:8080/api/produks");
+        return view('admin.daftarproduk', ['produks' => json_decode($produks)]);
     }
 
     public function tambah()
@@ -29,7 +29,7 @@ class DaftarprodukController extends Controller
         // $produks->stok = $request->stok;
 
         $this->validate(
-            $request    ,
+            $request,
             [
                 'nama' => 'required',
                 'harga' => 'required|integer',
@@ -58,37 +58,54 @@ class DaftarprodukController extends Controller
 
     public function edit($produk_id)
     {
-        $editproduks = Produk::find($produk_id);
+        // $editproduks = Produk::find($produk_id);
 
-        return view('admin.editproduk', compact('editproduks'));
+        $produk = Http::get("http://localhost:8080/api/produks/$produk_id");
+        // return view('pesanan',['produk' =>json_decode($produk)]);
+        return view('admin.editproduk', ['produk' => json_decode($produk)]);
     }
 
     public function update(Request $request, $produk_id)
     {
         $this->validate(
-            $request    ,
+            $request,
             [
                 'nama' => 'required',
                 'harga' => 'required|integer',
                 'kategori' => 'required',
                 'stok' => 'required|integer',
-                'gambar' => 'required',
             ]
         );
-        $update = Produk::find($produk_id);
-        $file = $update->gambar;
+        // $update = Produk::find($produk_id);
+        // $file = $update->gambar;
 
         if ($request->hasFile('gambar')) {
             $file = $request->file('gambar')->getClientOriginalName();
             $request->file('gambar')->move('imgproduk', $file);
-            $update->gambar = $file;
+            // $update->gambar = $file;
+            Http::put("http://localhost:8080/api/produks/$produk_id", [
+                'nama' => $request->nama,
+                'harga' => $request->harga,
+                'gambar' => $file,
+                'stok' => $request->stok,
+                'kategori' => $request->kategori,
+            ]);
+        } else {
+            Http::put("http://localhost:8080/api/produks/$produk_id", [
+                'nama' => $request->nama,
+                'harga' => $request->harga,
+                'stok' => $request->stok,
+                'kategori' => $request->kategori,
+            ]);
         }
 
-        $update->nama = $request->nama;
-        $update->harga = $request->harga;
-        $update->gambar = $file;
-        $update->kategori = $request->kategori;
-        $update->save();
+        // $update->nama = $request->nama;
+        // $update->harga = $request->harga;
+        // $update->gambar = $file;
+        // $update->kategori = $request->kategori;
+        // $update->save();
+
+
 
         return redirect('daftarproduk');
     }
@@ -98,7 +115,7 @@ class DaftarprodukController extends Controller
         $response = Http::delete("http://localhost:8080/api/produks/$produk_id");
         // $deleteproduks = Produk::find($produk_id);
         if ($response) {
-            return $response;
+            return redirect('daftarproduk');
         }
     }
 }
