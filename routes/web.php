@@ -13,6 +13,7 @@ use App\Http\Controllers\ShopController;
 use App\Http\Controllers\DetailpemesananController;
 use App\Http\Controllers\DaftarcustomerController;
 
+use App\Http\Controllers\PostController;
 
 
 /*
@@ -72,3 +73,4 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('feedback/store', [ContactController::class, 'store'])->name('feedback.store');
 });
 
+Route::get('/posts', [PostController::class, 'index']);

@@ -13,6 +13,8 @@ class ShopController extends Controller
     //
     public function index($checkout_id){
         $checkout = Checkout::find($checkout_id);
+
+        // Menampilkan daftar produk
         $pesan = DB::table('checkout')
         ->select('users.name as namauser','users.*','checkout.*','produk.*')
         ->join('users', 'checkout.user_id','=','users.user_id')
@@ -20,13 +22,14 @@ class ShopController extends Controller
         ->where('users.user_id','=',auth()->id())
         ->get();
 
-        
+        // Menampilkan data diri
         $bio =  Checkout::inRandomOrder()->limit(1)
         ->select('users.name as namauser','users.*','checkout.*')
         ->join('users', 'checkout.user_id','=','users.user_id')
         ->where('users.user_id','=',auth()->id())
         ->get();
 
+        // Menampilkan jumlah total harga
          $join = DB::table('checkout')
         ->select(DB::raw('SUM(total_detail) as total')) 
         ->groupBy('user_id')
@@ -34,6 +37,7 @@ class ShopController extends Controller
         ->get();
 
         
+        // Menampilkan halaman apabila sudah memesan
         if(count($pesan) == 0){
             return redirect('/');
         } else {
@@ -43,7 +47,7 @@ class ShopController extends Controller
    
         
     }
-
+// Menghapus daftar produk yang telah di pesan
     public function delete($user_id){
     
         $delete = Checkout::where('user_id',auth()->id());
@@ -53,11 +57,10 @@ class ShopController extends Controller
   
     }
 
+    
     public function store(Request $request){
         //                
-
         $checkout = Checkout::where('user_id',auth()->id())->get();
-
        
         $pemesanan= new Orders();
         $pemesanan->user_id = auth()->id() ;
@@ -80,7 +83,6 @@ class ShopController extends Controller
                 $orderdetail->produk_id = $checkouts->produk_id;
                 $orderdetail->orders_id = $pemesanan->orders_id;
                 $orderdetail->save();
-
             }  
             
             $deletecheckout = Checkout::where('user_id',auth()->id());

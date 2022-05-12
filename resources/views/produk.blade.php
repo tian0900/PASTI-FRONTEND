@@ -57,13 +57,12 @@
           @foreach($produk as $produks)
           <div class="col-md-4 card-produk">
             <div class="product-item">
-             <img src="imgproduk/{{$produks->gambar}}" alt=""width="80px" height="250px" >
+             <img src="imgproduk/{{ $produks->gambar }}" alt=""width="80px" height="250px" >
               <div class="down-content">
                 <h4>{{$produks->nama}}</h4>
                 <h6>@currency($produks->harga)</h6>
                   <a href="pesanan/{{$produks->produk_id}}" class="btn btn-success">Beli</a>
               </div>
-
             </div>
           </div>
           @endforeach 

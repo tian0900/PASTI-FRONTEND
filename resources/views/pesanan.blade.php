@@ -15,25 +15,25 @@
   <div class="card-body">
   <div class="row">
     <div class="col-sm-4">
-      <img src="{{url('imgproduk/'.$produks->gambar)}}" alt="" width="150px" height="200px">
+      <img src="{{url('imgproduk/'.$produk->gambar)}}" alt="" width="150px" height="200px">
     </div>
     <div class="col-sm-8">
     <form action="{{route('pesanan.store')}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
                 <div class="mb-12 row">
                     <label class="col-sm-3 col-form-label">Nama</label>
-                    <label class=" col-form-label text-start">{{$produks->nama}}</label>
+                    <label class=" col-form-label text-start">{{$produk->nama}}</label>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Harga</label>
-                    <label class=" col-form-label text-start">@currency($produks->harga)</label>
+                    <label class=" col-form-label text-start">@currency($produk->harga)</label>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Quantity</label>
                     <div class="col-sm-9">
                         <input type="number" required="required" id="harga" name="jumlah" class="form-control" >
-                        <input type="hidden" name="produk_id" class="form-control" value="{{$produks->produk_id}}">
-                        <input type="hidden" name="harga" class="form-control" value="{{$produks->harga}}">
+                        <input type="hidden" name="produk_id" class="form-control" value="{{$produk->produk_id}}">
+                        <input type="hidden" name="harga" class="form-control" value="{{$produk->harga}}">
                         
                     </div>
                 </div>

@@ -16,9 +16,9 @@
           <div class="col-mb-12">
           
           <div class="card" style="margin-bottom:40px">
-  <div class="card-body">
-  <div class="mb-12 row">
-  @foreach($bio as $pesans)
+              <div class="card-body">
+              <div class="mb-12 row">
+              @foreach($bio as $pesans)
                     <label class="col-sm-4 col-form-label">Nama</label>
                     <label class=" col-form-label text-start">{{$pesans->namauser}}</label>
                 </div>
@@ -40,14 +40,14 @@
                     <input type="hidden" required="required" name="total" class="form-control" value="{{$joins->total}}">
                 </div>
                 @endforeach
-  </div>
-</div>
+                </div>
+              </div>
             <div class="card border-primary mb-12 header-text" >
           
-  <div class="card-header">Checkout</div>
-  <div class="card-body">
-  <div class="row">
-    <div class="col-sm-12">
+            <div class="card-header">Checkout</div>
+            <div class="card-body">
+            <div class="row">
+              <div class="col-sm-12">
 
              
                 <div class="mb-12 row">
@@ -80,7 +80,7 @@
                 @endforeach
                 <div class="card-footer">
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><i class="fas fa-times"></i> Batal</button>
-				<button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Bayar</button>
+				        <button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Bayar</button>
                 </div>
 				
             </form>

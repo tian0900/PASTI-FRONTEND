@@ -49,6 +49,12 @@
                         <input type="number" required="required" id="harga" name="harga" class="form-control" >
                     </div>
                 </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label">Stok</label>
+                    <div class="col-sm-9">
+                        <input type="number" required="required" id="stok" name="stok" class="form-control" >
+                    </div>
+                </div>
                
                 
                 
