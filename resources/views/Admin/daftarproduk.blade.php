@@ -2,13 +2,16 @@
 
 
 <!-- Section 1 -->
+<br>
+<div><button type="button" class="btn btn-info" onclick="window.location.href='daftarproduk/tambah'" style="width:160px ; position:absolute; left:11%;"><i class="fas fa-plus"></i> Tambah Produk</button></div>
+
 <div class="tabel1" id="section-2">
   <div class="container-fluid">
     <div class="card mb-4">
       <div class="card-header">
         <i class="fas fa-table mr-1"></i>
         Daftar Produk
-      </div>
+      </div><br>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
@@ -18,6 +21,7 @@
                 <th>Nama</th>
                 <th>Jenis</th>
                 <th>Harga</th>
+                <th>Stok</th>
                 <th>Gambar</th>
                 <th>Action</th>
               </tr>
@@ -29,6 +33,7 @@
                 <td>{{$produk->nama}}</td>
                 <td>{{$produk->kategori}}</td>
                 <td>@currency($produk->harga)</td>
+                <td>{{$produk->stok}}</td>
                 <td><img src="{{url('imgproduk/'.$produk->gambar)}}" width="80px" height="80px" alt=""></td>
                 <td width="20%"><button type="button" class="btn btn-primary" onclick="window.location.href='/daftarproduk/edit/{{$produk->produk_id}}'"><i class="fas fa-edit"></i>
                     Edit</button>
@@ -69,7 +74,7 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-info" onclick="window.location.href='daftarproduk/tambah'"><i class="fas fa-plus"></i> Tambah Produk</button>
+
 
 
 
