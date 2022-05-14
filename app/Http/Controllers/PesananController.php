@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Produk;
 use App\Models\Checkout;
+use App\Models\Keranjang;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
@@ -20,13 +21,12 @@ class PesananController extends Controller
     }
 
     public function store(Request $request){
-        $checkout = new  Checkout();
-        $checkout->produk_id = $request->produk_id;
-        $checkout->jumlah = $request->jumlah;
-        $checkout->total_detail = $request->jumlah * $request->harga;
-        $checkout->user_id = auth()->id();
-        $checkout->save();
-
+        Http::post("http://localhost:8080/api/keranjangs",[
+            'id_customer' => session('user_id'),
+            'id_produk' => $request->produk_id,
+            'harga' => $request->harga,
+            'stok' => $request->jumlah,
+        ]);
         return redirect()->back();
     }
 }
