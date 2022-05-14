@@ -46,6 +46,7 @@ class ShopController extends Controller
 
         // Menampilkan halaman apabila sudah memesan
 
+        
         return view('shop', compact('pesan', 'bio', 'join'));
     }
     // Menghapus daftar produk yang telah di pesan

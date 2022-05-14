@@ -29,9 +29,10 @@ class PesananController extends Controller
             'harga' => $request->harga,
             'stok' => $request->jumlah,
         ]);
-        $produks = Produk::find($request->produk_id);
-        $produks->stok = $produks->stok - $request->jumlah;
-        $produks->save();
+        Http::put("http://localhost:8080/api/produks/stok/$request->produk_id", [
+            'id_produk' => $request->produk_id,
+            'kuantitas' => $request->jumlah,
+        ]);
 
         return redirect()->back();
     }

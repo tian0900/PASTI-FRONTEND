@@ -10,4 +10,5 @@ class Produk extends Model
     use HasFactory;
     protected $table = 'produks';
     protected $primaryKey = 'produk_id';
+    
 }
