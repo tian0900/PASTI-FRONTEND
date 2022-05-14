@@ -25,27 +25,27 @@
                         <tbody>
                             @foreach($order as $orders)
                             <tr>
-                                <td>{{$orders->orders_id}}</td>
+                                <td>{{$orders->id_pemesanan}}</td>
                                 <td>{{$orders->name}}</td>
-                                <td>@currency($orders->total)</td>
+                                <td>@currency($orders->total_pembayaran)</td>
                                 <td>
-                                    <form action="{{route('daftarpemesanan.update',$orders->orders_id)}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('daftarpemesanan.update',$orders->id_pemesanan)}}" method="post" enctype="multipart/form-data">
                                         {{ csrf_field() }}
-                                        <select class="form-control" required="required" name="keterangan" aria-label="Default select example">
-                                            <option value="{{$orders->keterangan}}">{{$orders->keterangan}}</option>
+                                        <select class="form-control" required="required" name="status" aria-label="Default select example">
+                                            <option value="{{$orders->status}}">{{$orders->status}}</option>
                                             <option value="Verifikasi">Verifikasi</option>
                                             <option value="Proses">Proses</option>
                                             <option value="Antar">Antar</option>
                                             <option value="Selesai">Selesai</option>
                                         </select>
                                 </td>
-                                <td><img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" width="80px" height="80px" alt="" data-toggle="modal" data-target="#myModal{{$orders->orders_id}}"></td>
-                                <td><button type="button" class="btn btn-warning" onclick="window.location.href='detailpemesanan/{{$orders->orders_id}}'"><i class="fas fa-info"></i> Detail</button>
+                                <td><img src="{{url('buktibayar/'.$orders->bukti_bayar)}}" width="80px" height="80px" alt="" data-toggle="modal" data-target="#myModal{{$orders->id_pemesanan}}"></td>
+                                <td><button type="button" class="btn btn-warning" onclick="window.location.href='detailpemesanan/{{$orders->id_pemesanan}}'"><i class="fas fa-info"></i> Detail</button>
                                     <button type="submit" class="btn btn-info"><i class="fas fa-info"></i> Simpan</button>
                                     </form>
                                 </td>
 
-                                <div id="myModal{{$orders->orders_id}}" class="modal fade" tabindex="-1" role="dialog">
+                                <div id="myModal{{$orders->id_pemesanan}}" class="modal fade" tabindex="-1" role="dialog">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-body">

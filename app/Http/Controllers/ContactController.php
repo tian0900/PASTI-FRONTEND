@@ -17,12 +17,10 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-
         Http::post('http://localhost:8080/api/feedbacks', [
             'id_customer' =>session('user_id'),
             'subjek' => $request->subjek,
             'deskripsi' => $request->deskripsi,
-
         ]);
 
         return redirect('/');

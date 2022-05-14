@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\Auth\Validator;
 use Illuminate\Support\Facades\DB;
+
 class LoginController extends Controller
 {
     /*
@@ -38,7 +39,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');    
+        $this->middleware('guest')->except('logout');
     }
     public function login(Request $request)
     {
@@ -48,15 +49,21 @@ class LoginController extends Controller
         //     return response()->json(['error' => 'Unauthorized'], 401);
         // }
         $data = $request->input();
-        
+
         $user = DB::table('users')->where('email', $data['email'])->value('name');
         $user_id = DB::table('users')->where('email', $data['email'])->value('user_id');
-        $request->session()->put('user',$user);
-        $request->session()->put('user_id',$user_id);
-        Http::post("http://localhost:8080/api/auth/login",[
+        $role = DB::table('users')->where('email', $data['email'])->value('role');
+        $request->session()->put('user', $user);
+        $request->session()->put('user_id', $user_id);
+        $request->session()->put('role', $role);
+        Http::post("http://localhost:8080/api/auth/login", [
             'email' => $request->email,
             'password' => $request->password
         ]);
-        return redirect('/');
+        if (session('role') == "Admin") {
+            return redirect('/daftarproduk');
+        } elseif (session('role') == "Customer") {
+            return redirect('/');
+        }
     }
 }

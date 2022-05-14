@@ -20,8 +20,8 @@
                             <tr>
                                 <td><?php echo $nomor++; ?></td>
                                 <td>{{$orders->nama}}</td>
-                                <td>{{$orders->jumlah}}</td>
-                                <td>@currency($orders->total_detail)</td>
+                                <td>{{$orders->kuantitas_pesan}}</td>
+                                <td>@currency($orders->total_harga)</td>
                             </tr>
                         @endforeach
                         </tbody>
