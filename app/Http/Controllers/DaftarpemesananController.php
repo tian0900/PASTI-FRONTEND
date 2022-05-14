@@ -17,7 +17,7 @@ class DaftarpemesananController extends Controller
 
     public function update(Request $request, $id_pemesanan){
         $update = Pemesanan::find($id_pemesanan);
-        $update->keterangan = $request->keterangan;
+        $update-> status = $request->status;
         $update -> save();
         return redirect()->back();         
 
