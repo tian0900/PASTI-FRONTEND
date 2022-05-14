@@ -13,7 +13,7 @@ use App\Http\Controllers\ShopController;
 use App\Http\Controllers\DetailpemesananController;
 use App\Http\Controllers\DaftarcustomerController;
 
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\AuthController;
 
 
 /*
@@ -30,7 +30,9 @@ use App\Http\Controllers\PostController;
 Route::get('/', [SipalbabController::class, 'index']);
 Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
-
+Route::get('/auth/login', [AuthController::class, 'index']);
+Route::post('auth/login/store', [AuthController::class, 'login'])->name('auth.login');
+Route::post('auth/register', [AuthController::class, 'register'])->name('auth.register');
 
 Route::get('/about', function () {
     return view('about');
@@ -42,7 +44,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware' => ['auth', 'role']], function () {
+Route::group(['middleware' => ['role']], function () {
     // Daftar Produk
     Route::get('/daftarproduk', [DaftarprodukController::class, 'index'])->middleware('role');
     Route::get('/daftarproduk/tambah', [DaftarprodukController::class, 'tambah']);
@@ -61,7 +63,7 @@ Route::group(['middleware' => ['auth', 'role']], function () {
 
 });
 
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['custom']], function () {
     Route::get('/pembayaran', [PembayaranController::class, 'index']);
 
     Route::get('/pesanan/{produk_id}', [PesananController::class, 'index']);
@@ -74,3 +76,14 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+
+Route::get('/auth/logout', function(){
+    if(session()->has('user'))
+    {
+        session()->pull('user');
+        session()->pull('user_id');
+    }
+    return redirect('/');
+});
+
+

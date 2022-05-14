@@ -6,8 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-
-
+use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\Auth\Validator;
+use Illuminate\Support\Facades\DB;
 class LoginController extends Controller
 {
     /*
@@ -39,21 +40,23 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');    
     }
-    public function login(Request $request){
-        $input = $request->all();
+    public function login(Request $request)
+    {
 
 
-        if(auth()->attempt(array('email' => $input['email'],'password'=> 
-        $input['password'])))
-        {
-            if(auth()->user()->role == 1){
-                return redirect('/daftarproduk');
-            }else{
-                return redirect('/');
-            }
-        }else{
-            return redirect()->route('login')
-            ->with('error','Email-Address And Password Are Wrong.');
-        }
+        // if (!$token = auth()->attempt($validator->validated())) {
+        //     return response()->json(['error' => 'Unauthorized'], 401);
+        // }
+        $data = $request->input();
+        
+        $user = DB::table('users')->where('email', $data['email'])->value('name');
+        $user_id = DB::table('users')->where('email', $data['email'])->value('user_id');
+        $request->session()->put('user',$user);
+        $request->session()->put('user_id',$user_id);
+        Http::post("http://localhost:8080/api/auth/login",[
+            'email' => $request->email,
+            'password' => $request->password
+        ]);
+        return redirect('/');
     }
 }
