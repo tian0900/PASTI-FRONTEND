@@ -18,7 +18,9 @@
       <div class="card" style="margin-bottom:40px">
         <div class="card-body">
           <div class="mb-12">
-            <h3><center>Belum Ada Pesanan</center></h3>
+            <h3>
+              <center>Belum Ada Pesanan</center>
+            </h3>
           </div>
         </div>
       </div>
@@ -71,30 +73,54 @@
               <hr size="9px">
               <hr>
               @foreach($pesan as $pesan)
-              <div class="mb-12 row">
-                <label class="col-sm-5 col-form-label">Nama</label>
-                <label class=" col-form-label text-start">{{$pesan->nama}}</label>
-                <input type="hidden" required="required" name="produk_id" class="form-control" value="{{$pesan->produk_id}}">
+              <div class="col-md-6">
+                <div class="mb-12 row">
+                  <label class="col-sm-5 col-form-label">Nama</label>
+                  <label class=" col-form-label text-start">{{$pesan->nama}}</label>
+                  <input type="hidden" required="required" name="produk_id" class="form-control" value="{{$pesan->produk_id}}">
+                </div>
+                <div class="mb-12 row">
+                  <label class="col-sm-5 col-form-label">Quantity</label>
+                  <label class=" col-form-label text-start">{{$pesan->kuantitas}}</label>
+                  <input type="hidden" required="required" name="kuantitas" class="form-control" value="{{$pesan->kuantitas}}">
+                </div>
+                <div class="mb-12 row">
+                  <label class="col-sm-5 col-form-label">Total Harga</label>
+                  <label class=" col-form-label text-start">@currency($pesan->total)</label>
+                  <input type="hidden" required="required" name="total" class="form-control" value="{{$pesan->total}}">
+                </div>
               </div>
-              <div class="mb-12 row">
-                <label class="col-sm-5 col-form-label">Quantity</label>
-                <label class=" col-form-label text-start">{{$pesan->kuantitas}}</label>
-                <input type="hidden" required="required" name="kuantitas" class="form-control" value="{{$pesan->kuantitas}}">
-              </div>
-              <div class="mb-12 row">
-                <label class="col-sm-5 col-form-label">Total Harga</label>
-                <label class=" col-form-label text-start">@currency($pesan->total)</label>
-                <input type="hidden" required="required" name="total" class="form-control" value="{{$pesan->total}}">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal{{$pesan->produk_id}}"><i class="fas fa-times"></i> Batal</button>
               </div>
               <hr>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal{{$pesan->produk_id}}" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title">Hapus Data</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Anda ingin menghapusnya?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='/shop/delete/{{$pesan->id_keranjang}}'">Hapus</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
               @endforeach
               <div class="card-footer">
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><i class="fas fa-times"></i> Batal</button>
                 <button type="submit" class="btn btn-success"><i class="fas fa-check"></i> Bayar</button>
               </div>
-
               </form>
-
             </div>
           </div>
         </div>
@@ -104,28 +130,6 @@
 </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-
-        <h4 class="modal-title">Hapus Data</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p>Anda ingin menghapusnya?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger" onclick="window.location.href='/shop/delete/{{$pesan->id_keranjang}}'">Hapus</button>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 @endif
 

@@ -13,20 +13,26 @@ class PesananController extends Controller
 {
     //
 
-    public function index($produk_id){
+    public function index($produk_id)
+    {
         // $produks = Produk::find($produk_id);
         // return view('pesanan',compact('produks'));
         $produk = Http::get("http://localhost:8080/api/produks/$produk_id");
-        return view('pesanan',['produk' =>json_decode($produk)]);
+        return view('pesanan', ['produk' => json_decode($produk)]);
     }
 
-    public function store(Request $request){
-        Http::post("http://localhost:8080/api/keranjangs",[
+    public function store(Request $request)
+    {
+        Http::post("http://localhost:8080/api/keranjangs", [
             'id_customer' => session('user_id'),
             'id_produk' => $request->produk_id,
             'harga' => $request->harga,
             'stok' => $request->jumlah,
         ]);
+        $produks = Produk::find($request->produk_id);
+        $produks->stok = $produks->stok - $request->jumlah;
+        $produks->save();
+
         return redirect()->back();
     }
 }
