@@ -73,7 +73,7 @@
                 <h4>Christian Sihotang</h4>
                 <span>Developer</span>
                 <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
+                <p> Group 12 </p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
                 <h4>Marcellino Lumban Gaol</h4>
                 <span>Developer</span>
                 <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
+                <p> Group 12 </p>
               </div>
             </div>
           </div>
@@ -118,10 +118,10 @@
               </div>
               
               <div class="down-content">
-                <h4>Samuel Tampubolon</h4>
+                <h4>Samuel Simanjuntak</h4>
                 <span>Developer</span>
                 <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
+                <p> Group 12 </p>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
                 <h4>Nesty Tampubolon</h4>
                 <span>Developer</span>
                 <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
+                <p> Group 12 </p>
               </div>
             </div>
           </div>
@@ -169,7 +169,32 @@
                 <h4>Onra Sihombing</h4>
                 <span>Developer</span>
                 <p>D-IV TRPL 2020</p>
-                <p> Group 1 </p>
+                <p> Group 12 </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="thumb-container">
+              <img width="100px" height="200px" src="{{asset('image')}}/team_05.jpeg">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <ul class="social-icons">
+                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/ziva-tampubolon-73b4451a0/"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="down-content">
+                <h4>Ziva Tampubolon</h4>
+                <span>Developer</span>
+                <p>D-IV TRPL 2020</p>
+                <p> Group 12 </p>
               </div>
             </div>
           </div>
