@@ -47,7 +47,7 @@ slidesToScroll: 1
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2021 Sopanagaman Official
+              <p>Copyright &copy; <?php echo date("Y"); ?> Sopanagaman Official
                     <a rel="nofollow noopener" href="#" target="_blank"></a></p>
             </div>
           </div>
