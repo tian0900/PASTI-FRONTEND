@@ -17,14 +17,9 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        $feedback = new Feedback();
-        $feedback->user_id =  session('user_id');
-        $feedback->subjek = $request->input('subjek');
-        $feedback->deskripsi = $request->input('deskripsi');
 
-        $feedback->save();
         Http::post('http://localhost:8080/api/feedbacks', [
-            'id_customer' => $request->id_customer,
+            'id_customer' =>session('user_id'),
             'subjek' => $request->subjek,
             'deskripsi' => $request->deskripsi,
 

@@ -66,7 +66,7 @@
             <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
             <div class="image-upload-wrap">
-              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <input class="file-upload-input" name="bukti_bayar" type='file' onchange="readURL(this);" accept="image/*" />
               <div class="drag-text">
                 <h3>Drag and drop a file or select add Image</h3>
               </div>
@@ -76,6 +76,7 @@
               <div class="image-title-wrap">
                 <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
               </div>
+              
             </div>
           </div>
 
