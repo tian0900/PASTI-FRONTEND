@@ -28,6 +28,10 @@
                     <label class="col-sm-3 col-form-label">Harga</label>
                     <label class=" col-form-label text-start">@currency($produk->harga)</label>
                 </div>
+                <div class="mb-12 row">
+                    <label class="col-sm-3 col-form-label">Stok</label>
+                    <label class=" col-form-label text-start">{{$produk->stok}}</label>
+                </div>
                 <div class="mb-3 row">
                     <label class="col-sm-3 col-form-label">Quantity</label>
                     <div class="col-sm-9">

@@ -18,7 +18,6 @@ class ProdukController extends Controller
         // }
         // return view('produk',['produk' =>$produk]);
         $produk = Http::get("http://localhost:8080/api/produks");
-        return view('produk',['produk' =>json_decode($produk)]);;
-
+        return view('produk',['produk' =>json_decode($produk)]);
     }
 }
