@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   <title>SIPALBAB</title>
 
@@ -16,6 +17,8 @@
 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
 
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
@@ -27,6 +30,7 @@
   <link rel="stylesheet" href="{{asset('css')}}/fontawesome.css">
   <link rel="stylesheet" href="{{asset('css')}}/templatemo-sixteen.css">
   <link rel="stylesheet" href="{{asset('css')}}/owl.css">
+  <link rel="stylesheet" href="{{asset('css')}}/upload.css">
   <link rel="stylesheet" href="{{asset('aos')}}/aos.css">
   <link href="{{asset('image')}}/drugstore.png" rel="icon">
 

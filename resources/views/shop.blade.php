@@ -27,7 +27,7 @@
     </div>
     @else
     <div class="col-mb-12">
-      <div class="card" style="margin-bottom:40px">
+      <div class="card" style="margin-bottom:40px ">
         <div class="card-body">
           <div class="mb-12 row">
             @foreach($bio as $pesans)
@@ -62,13 +62,22 @@
             <div class="col-sm-12">
 
 
-              <div class="mb-12 row">
-                <label class="col-sm-4 col-form-label">Bukti Pembayaran</label>
-                <div class="col-sm-8">
-                  <input class="form-control" required="required" id="formFileMultiple" name="bukti_bayar" type="file" id="formFileMultiple" multiple value="">
-                </div>
-                <hr>
+            <div class="file-upload">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
               </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+              <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+              </div>
+            </div>
+          </div>
 
               <hr size="9px">
               <hr>
