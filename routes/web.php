@@ -76,6 +76,7 @@ Route::group(['middleware' => ['custom']], function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+Route::post('auth/register', [AuthController::class, 'register'])->name('auth.register');
 
 Route::get('/auth/logout', function(){
     if(session()->has('user'))

@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Checkout;
-use App\Models\Orders;
 use App\Models\User;
-use App\Models\Orderdetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
