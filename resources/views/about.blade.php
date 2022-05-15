@@ -108,9 +108,9 @@
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
-                      <li><a href="https://www.facebook.com/prayoga.tampubolon.9"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/samuel-tampubolon-a1425a1bb/"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                       <li><a href="https://www.instagram.com/samueltmp_/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
@@ -177,7 +177,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-              <img width="100px" height="200px" src="{{asset('image')}}/team_05.jpeg">
+              <img width="100px" height="200px" src="{{asset('image')}}/ziva.jpeg">
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
